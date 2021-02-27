@@ -1,21 +1,25 @@
 .nav {
     background-color: $color-modern-blue;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: $color-modern-white;
     padding: 12px;
 }
 
 .list {
-    display: flex;
+    
     list-style: none;
+    display: flex;
 
     li {
-        padding: 0 10px;
+        padding-left: 10px;
     }
 }
 
 .title {
-    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

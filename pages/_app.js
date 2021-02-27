@@ -1,13 +1,15 @@
-import Nav from "../components/Nav";
+
+import Layout from '../components/Layout';
 import '../styles/globals.scss';
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-    <Nav />
-    <Component {...pageProps} />
-    </>
+
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+    
   )
 }
 

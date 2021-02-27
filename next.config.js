@@ -2,6 +2,6 @@ module.exports = {
     /* config options here */
     sassOptions: {
         includePaths: ['./styles'],
-        prependData: `@import "styles/_colors.scss";`,
+        prependData: `@import "styles/common.scss"; @import "styles/colors.scss";`,
     }
   }
