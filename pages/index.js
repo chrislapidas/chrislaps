@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className={styles.container}>
 
         <h1 className="text-4xl font-semibold">Hi, I'm Chris Lapidas.</h1>
         <div>Switch themes: Clean Retro Cyberpunk</div>
