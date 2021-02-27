@@ -1,0 +1,19 @@
+.nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.list {
+    display: flex;
+
+    li {
+        padding: 0 10px;
+    }
+}
+
+.title {
+    padding: 0 10px;
+}

@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Chris Lapidas</title>
+        <title>Chris Lapidas | Web Developer</title>
+        <meta name="keywords" content="Chris Lapidas, Web Developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
