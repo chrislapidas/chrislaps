@@ -1,5 +1,8 @@
 .landing {
-  background-color: $color-modern-blue;
+  //background-color: $color-modern-blue;
+  background: linear-gradient(330deg, rgba(21,183,166,0.8) 0%, rgba(29,106,134,0.95) 77%)
+  
+  , url("../public/rect.jpg");
   color: $color-modern-white;
-  padding: 48px 0;
+  padding: 120px 0;
 }

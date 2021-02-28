@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
           <title>Chris Lapidas | Web Developer</title>
           <meta name="keywords" content="Chris Lapidas, Web Developer" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main>
