@@ -1,4 +1,5 @@
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import styles from '../styles/Layout.module.scss';
 
 const Layout = ({children}) => {
@@ -9,6 +10,7 @@ const Layout = ({children}) => {
          <main>
              {children}
          </main>
+         <Footer />
      </div>
      
  )
