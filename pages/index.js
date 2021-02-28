@@ -19,7 +19,20 @@ export default function Home() {
             <div>This site was made using:</div>
             <div>Next.js, React, and Express</div>
             <div>Check it out <a>here on GitHub</a></div>
+            <div>(Spotify Icon) I just listened to <a>"Do I Do" by Stevie Wonder</a></div>
           </div>
+        </div>
+
+        <div className={styles.section1}>
+
+            <div className={styles.section1col1}>
+              This site was made using
+              Next.js, React, and Express
+            </div>
+            <div className={styles.section1col2}>
+              Icons here
+            </div>
+        
         </div>
         
 

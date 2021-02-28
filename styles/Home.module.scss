@@ -1,8 +1,27 @@
 .landing {
   //background-color: $color-modern-blue;
-  background: linear-gradient(330deg, rgba(21,183,166,0.8) 0%, rgba(29,106,134,0.95) 77%)
-  
+  background: linear-gradient(315deg, rgba(21,183,166,0.8) 0%, rgba(29,106,134,.98) 77%)
   , url("../public/rect.jpg");
   color: $color-modern-white;
   padding: 120px 0;
 }
+
+.section1 {
+  background: $color-modern-yellow;
+  
+  display: flex;
+}
+
+.section1col1 {
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.section1col2 {
+  flex: 1 1 auto;
+  text-align: center;
+  background: $color-modern-pink;
+  padding: 100px 0;
+}
+
