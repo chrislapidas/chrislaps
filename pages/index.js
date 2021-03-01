@@ -23,10 +23,10 @@ export default function Home() {
 
         <div className={"elevation-2 " + styles.section1}>
 
-          <div className="container">
+          <div className={"container " + styles.section1row1}>
             <div className={styles.section1col1}>
               <h4>I created this site using Next.js and React</h4>
-              <div>
+              <div className={styles.iconRow}>
                 <img className={styles.section1icon} src="/next.svg"></img>
                 <img className={styles.section1icon} src="/react.png"></img>
               </div>
@@ -34,10 +34,23 @@ export default function Home() {
             </div>
             <div className={styles.section1col2}>
               <h4>I build, deploy, and run this site using AWS Elastic Beanstalk</h4>
-              <code>git commit -m "Minor css changes"</code><br/>
-              <code>eb deploy prod-env</code><br/>
+              <div className={styles.section1aws}>
+                <img className={styles.awsIcon} src="/aws.png"></img>
+                <div className={styles.section1col2code}>
+                  <code>git commit -m "Minor css changes"</code><br/>
+                  <code>eb deploy prod-env</code><br/>
+                </div>
+                
+              </div>
+              
             </div>
+            
           </div>
+          <div className={"container " + styles.section1row2}>
+              <h4>Check it out here on GitHub</h4>
+              <div>(icon)</div>
+            </div>
+          
         </div>
 
         <div>..and is built/deployed/run using</div>

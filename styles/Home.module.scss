@@ -1,6 +1,6 @@
 .landing {
   //background-color: $color-modern-blue;
-  background: linear-gradient(315deg, rgba(21,183,166,0.8) 0%, rgba(29,106,134,1) 77%)
+  background: linear-gradient(315deg, rgba(21,183,166,0.5) 0%, rgba(29,106,134,1) 77%)
   , url("../public/rect.jpg");
   background-size: cover;
   color: $color-modern-white;
@@ -13,18 +13,54 @@
 
 }
 
+.section1row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section1col1 {
-  
   text-align: center;
   padding: 100px 0;
-
+  flex: 1 1 50%;
+ 
 }
 
 .section1col2 {
   text-align: center;
   padding: 100px 0;
+  flex: 1 1 50%;
+}
+
+.section1col2code {
+  background-color: black;
+  color: $color-modern-white;
+  text-align: left;
+  margin: auto 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.section1aws {
+  display: flex;
+  justify-content:center;
+}
+
+.iconRow {
+  display: flex;
+  justify-content: center;
 }
 
 .section1icon {
   max-width: 128px;
+  padding: 12px;
+}
+
+.awsIcon {
+  max-width: 128px;
+}
+
+
+
+.section1row2 {
+  text-align: center;
 }
