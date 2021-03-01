@@ -15,7 +15,7 @@ export default function Home() {
           <div className={"container"}>
             <div><h1>Hi, I'm Chris Lapidas</h1></div>
             
-            <div>I'm a full stack web developer working with React, Angular, Node, and Java</div>
+            <div>I'm a full stack web developer <br/>working with React, Angular, and Node</div>
 
             
           </div>
@@ -24,7 +24,7 @@ export default function Home() {
         <div className={"elevation-2 " + styles.section1}>
 
           <div className={"container " + styles.section1row1}>
-            <div className={styles.section1col1}>
+            <div className={"elevation-2 " + styles.section1col1}>
               <h4>I created this site using Next.js and React</h4>
               <div className={styles.iconRow}>
                 <img className={styles.section1icon} src="/next.svg"></img>
@@ -32,11 +32,11 @@ export default function Home() {
               </div>
               
             </div>
-            <div className={styles.section1col2}>
+            <div className={"elevation-2 " + styles.section1col2}>
               <h4>I build, deploy, and run this site using AWS Elastic Beanstalk</h4>
               <div className={styles.section1aws}>
                 <img className={styles.awsIcon} src="/aws.png"></img>
-                <div className={styles.section1col2code}>
+                <div className={"elevation-2 " + styles.section1col2code}>
                   <code>git commit -m "Minor css changes"</code><br/>
                   <code>eb deploy prod-env</code><br/>
                 </div>
@@ -47,16 +47,11 @@ export default function Home() {
             
           </div>
           <div className={"container " + styles.section1row2}>
-              <h4>Check it out here on GitHub</h4>
-              <div>(icon)</div>
+              <h4>Check it out on </h4>
+              <button className={styles.githubButton}><h4>GitHub</h4> <img className={styles.github} src="/github.png"></img></button>
             </div>
           
         </div>
-
-        <div>..and is built/deployed/run using</div>
-              <div><h3>AWS Elastic Beanstalk</h3></div>
-              <div>Check it out</div>
-              <h3><a>(icon) here on github</a></h3>
 
         <div>
           Latest Articles
