@@ -18,24 +18,40 @@ export default function Home() {
               
               <div>I'm a full stack web developer working with React, Angular, and Node.</div>
 
-              <div >
-                This is my article collection and my playground for cool web stuff.
-              </div>
             </div>
-            
-
-            
-
           </div>
 
+          
+        
+          
+        </div>
+
+        <div className={styles.latest}>
+          <div className={"container " + styles.latestDivs}>
+            <div className={styles.articleWrapper1}>
+              <div className={styles.article1}>Beginner's Guide to CSS Flexbox</div>
+            </div>
+            <div className={styles.articleWrapper2}>
+              <div className={styles.article2}>Anonymous Functions in Javascript</div>
+            </div>
+            <div className={styles.articleWrapper3}>
+              <div className={styles.article3}>Running A Node Application on AWS Elastic Beanstalk</div>
+            </div>
+            <div className={styles.articleWrapper4}>
+              <div className={styles.article4}><h1>Latest Articles</h1></div>
+            </div>
+            
+            
+            
+          </div>
+
+        </div>
 
 
-
-
-          <div className={styles.section1}>
+        <div className={styles.section1}>
 
             <div className={"container " + styles.section1row1}>
-              <div className={"elevation-5 " + styles.section1col1}>
+              <div className={styles.section1col1}>
                 <h4>I created this site using Next.js and React</h4>
                 <div className={styles.iconRow}>
                   <img className={styles.section1icon} src="/next.svg"></img>
@@ -43,7 +59,7 @@ export default function Home() {
                 </div>
                 
               </div>
-              <div className={"elevation-5 " + styles.section1col2}>
+              <div className={styles.section1col2}>
                 <h4>I build, deploy, and run using AWS Elastic Beanstalk</h4>
                 <div className={styles.section1aws}>
                   <img className={styles.awsIcon} src="/aws.png"></img>
@@ -58,44 +74,15 @@ export default function Home() {
               
             </div>
             <div className={"container " + styles.section1row2}>
-                <button className={"elevation-3 " + styles.githubButton}><h3>Check it out on GitHub</h3> <img className={styles.github} src="/github.png"></img></button>
-              </div>
+              <button className={"elevation-2 " + styles.githubButton}><h3>Check it out on GitHub</h3> <img className={styles.github} src="/github.png"></img></button>
+            </div>
             
           </div>
-
-          <div className={styles.contact}>
-            
-              <div>
-                <h2>Contact me</h2>
-              </div>
-              <button className={styles.contactButton}>
-                <h3>clapidas@gmail.com</h3>
-                <img className={styles.clipboard} src="/clipboard.png"></img>
-              </button>
-            </div>
-
-        
-          
-        </div>
-
-
-        
-
-        <div>
-          Latest Articles
-        </div>
-        <div>(Spotify Icon) I just listened to <a>"Do I Do" by Stevie Wonder</a></div>
-        <div>Get In Touch</div>
-        <div>(email icon) clapidas@gmail.com</div>
-        <div>Switch themes: Clean Retro Cyberpunk</div>
-    
-
-        
+      
      
       </main>
 
-      <footer>
-      </footer>
+
     </div>
   )
 }
