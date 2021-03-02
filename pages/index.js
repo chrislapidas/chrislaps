@@ -14,12 +14,12 @@ export default function Home() {
         <div className={styles.landing}>
           <div className={"container " + styles.landingBox}>
             <div className={styles.landingRow}>
-              <div><h1>Hi, I'm <br/>Chris Lapidas</h1></div>
+              <div><h1>Hi, I'm Chris Lapidas</h1></div>
               
-              <div>I'm a full stack web developer <br/>working with React, Angular, and Node.</div>
+              <div>I'm a full stack web developer working with React, Angular, and Node.</div>
 
               <div >
-                This website is my article collection <br/>and my playground for cool web stuff.
+                This is my article collection and my playground for cool web stuff.
               </div>
             </div>
             
@@ -58,7 +58,7 @@ export default function Home() {
               
             </div>
             <div className={"container " + styles.section1row2}>
-                <button className={styles.githubButton}><h3>Check it out on <u>GitHub</u></h3> <img className={styles.github} src="/github.png"></img></button>
+                <button className={"elevation-3 " + styles.githubButton}><h3>Check it out on GitHub</h3> <img className={styles.github} src="/github.png"></img></button>
               </div>
             
           </div>

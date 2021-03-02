@@ -1,15 +1,12 @@
 .landing {
-  background: linear-gradient(315deg, rgba(21,183,166,0.5) 0%, rgba(29,106,134,.8) 77%)
+  background: linear-gradient(315deg, rgba(21,183,166,0.5) 0%, rgba(29,106,134,.85) 77%)
   , url("../public/rect.jpg");
   background-size: cover;
-  color: black;
-  padding: 180px 0 60px 0;
+  color: $color-modern-white;
 }
 
 .landingBox {
-
-  background: $color-modern-white;
-
+  padding: 200px 0;
 }
 
 .landingRow {
@@ -44,7 +41,7 @@
 }
 
 .section1 {
-  
+
 }
 
 .section1row1 {
@@ -63,14 +60,14 @@
 
 .section1col1 {
   
-  margin: 60px 40px 40px 0px;
+  margin-right: 24px;
  
  
 }
 
 .section1col2 {
 
-  margin: 60px 0px 40px 40px;
+ margin-left: 24px;
 
 }
 
@@ -92,8 +89,10 @@
 .githubButton {
   display: flex;
   align-items: center;
-  background: none;
+  background: radial-gradient(circle, rgba(255,193,92,1) 0%, rgba(255,183,65,1) 100%);
   border: none;
+  margin-top: 36px;
+  padding: 5px 15px;
 
 }
 
@@ -122,8 +121,7 @@
 }
 
 .github {
-  max-height: 36px;
-  max-width: 36px;
-  margin: auto 0;
+  max-height: 30px;
+  max-width: 30px;
   margin-left: 5px;
 }
