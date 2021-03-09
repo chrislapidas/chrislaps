@@ -28,13 +28,13 @@ export default function Home() {
 
         <div className={styles.latest}>
           <div className={"container " + styles.latestDivs}>
-            <div className={styles.articleWrapper1}>
+            <div className={"elevation-5 " + styles.articleWrapper1}>
               <div className={styles.article1}>Beginner's Guide to CSS Flexbox</div>
             </div>
-            <div className={styles.articleWrapper2}>
+            <div className={"elevation-5 " + styles.articleWrapper2}>
               <div className={styles.article2}>Anonymous Functions in Javascript</div>
             </div>
-            <div className={styles.articleWrapper3}>
+            <div className={"elevation-5 " + styles.articleWrapper3}>
               <div className={styles.article3}>Running A Node Application on AWS Elastic Beanstalk</div>
             </div>
             <div className={styles.articleWrapper4}>
