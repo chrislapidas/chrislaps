@@ -1,6 +1,10 @@
 .landing {
-  background: linear-gradient(270deg, rgba(21,183,166,0.85) 0%, rgba(16,57,73,0.95) 80%)
-  , url("../public/rect.jpg");
+  background: linear-gradient(
+      270deg,
+      rgba(21, 183, 166, 0.85) 0%,
+      rgba(16, 57, 73, 0.95) 80%
+    ),
+    url("../public/rect.jpg");
   background-size: cover;
   color: $color-modern-white;
 }
@@ -11,9 +15,6 @@
 }
 
 .landingRow {
-  
-  
-
 }
 
 .explain {
@@ -21,28 +22,26 @@
   padding-top: 80px;
 }
 
-
-
 .latest {
-  background: linear-gradient(0deg, rgba(255,238,204,1) 0%, rgba(255,243,220,1) 50%, rgba(255,238,204,1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 238, 204, 1) 0%,
+    rgba(255, 243, 220, 1) 50%,
+    rgba(255, 238, 204, 1) 100%
+  );
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .latestDivs {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-  
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
-
-
 }
 
 .articleWrapper1 {
   background: #2b99c2;
-  
 }
 
 .articleWrapper2 {
@@ -53,29 +52,28 @@
   background: $color-modern-yellow;
 }
 
-.articleWrapper1, .articleWrapper2, .articleWrapper3, .articleWrapper4 {
-
-  padding: 10% 0;
-  margin: 3%;
-  
-
-  
+.articleWrapper1,
+.articleWrapper2,
+.articleWrapper3,
+.articleWrapper4 {
+  padding: 0;
+  margin: 1%;
+  position: relative;
+  flex-basis: calc(33.333%);
+  height: calc(26.6vw);
 }
 
-.article1, .article2, .article3 {
-  
+.article1,
+.article2,
+.article3 {
   padding: 8%;
-  font-size: 20px;
-  
-  
-  
+  font-size: 16px;
 }
 
 .article2 {
 }
 
 .article3 {
-
 }
 
 .article4 {
@@ -83,8 +81,8 @@
 }
 
 .section1 {
- background: $color-modern-yellow;
- padding-top: 48px;
+  background: $color-modern-yellow;
+  padding-top: 48px;
 }
 
 .section1row1 {
@@ -93,7 +91,8 @@
   color: black;
 }
 
-.section1col1, .section1col2 {
+.section1col1,
+.section1col2 {
   padding: 36px 0;
   flex: 1 1 50%;
 
@@ -101,16 +100,9 @@
 }
 
 .section1col1 {
-  
-
- 
- 
 }
 
 .section1col2 {
-
-
-
 }
 
 .section1col2code {
@@ -125,7 +117,7 @@
 
 .section1aws {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .githubButton {
@@ -135,7 +127,6 @@
   border: none;
   padding: 5px 15px;
   border-radius: 5px;
-
 }
 
 .iconRow {
@@ -152,14 +143,11 @@
   max-width: 128px;
 }
 
-
-
 .section1row2 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 60px;
-
 }
 
 .github {
