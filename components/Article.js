@@ -1,7 +1,10 @@
-const Article = () => {
+const Article = ({ title, date, tags, children }) => {
   return (
     <div>
-      asdasdasd<div>asdasdddd</div>
+      <h2>{title}</h2>
+      <h4>{date}</h4>
+      <div>{tags}</div>
+      <div>{children}</div>
     </div>
   );
 };
