@@ -6,12 +6,13 @@
     ),
     url("../public/rect.jpg");
   background-size: cover;
+  height: calc(100vh - 80px);
   color: $color-modern-white;
 }
 
 .landingBox {
-  padding-top: 250px;
-  padding-bottom: 250px;
+  position: absolute; /* or absolute */
+  top: 50%;
 }
 
 .landingRow {
@@ -29,13 +30,12 @@
     rgba(255, 243, 220, 1) 50%,
     rgba(255, 238, 204, 1) 100%
   );
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .latestDivs {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -57,10 +57,10 @@
 .articleWrapper3,
 .articleWrapper4 {
   padding: 0;
-  margin: 1%;
+  margin: 0%;
   position: relative;
-  flex-basis: calc(33.333%);
-  height: calc(26.6vw);
+  flex: 1;
+  height: calc(20vw);
 }
 
 .article1,
@@ -95,14 +95,10 @@
 .section1col2 {
   padding: 36px 0;
   flex: 1 1 50%;
-
   text-align: center;
-}
-
-.section1col1 {
-}
-
-.section1col2 {
+  background-color: $color-modern-white;
+  margin: 20px;
+  border-radius: 2px;
 }
 
 .section1col2code {
@@ -126,7 +122,7 @@
   background: $color-modern-white;
   border: none;
   padding: 5px 15px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .iconRow {
@@ -148,6 +144,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 60px;
+  margin-top: 10px;
 }
 
 .github {

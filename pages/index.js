@@ -53,14 +53,14 @@ export default function Home() {
 
         <div className={styles.section1}>
           <div className={"container " + styles.section1row1}>
-            <div className={styles.section1col1}>
+            <div className={"elevation-2 " + styles.section1col1}>
               <h4>I created this site using Next.js and React</h4>
               <div className={styles.iconRow}>
                 <img className={styles.section1icon} src="/next.svg"></img>
                 <img className={styles.section1icon} src="/react.png"></img>
               </div>
             </div>
-            <div className={styles.section1col2}>
+            <div className={"elevation-2 " + styles.section1col2}>
               <h4>I build, deploy, and run using AWS Elastic Beanstalk</h4>
               <div className={styles.section1aws}>
                 <img className={styles.awsIcon} src="/aws.png"></img>
