@@ -10,17 +10,9 @@
   color: $color-modern-white;
 }
 
-.landingBox {
+.landingContainer {
   position: absolute; /* or absolute */
   top: 50%;
-}
-
-.landingRow {
-}
-
-.explain {
-  text-align: right;
-  padding-top: 80px;
 }
 
 .latest {
@@ -34,7 +26,7 @@
   padding-bottom: 60px;
 }
 
-.latestDivs {
+.latestContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,29 +62,22 @@
   font-size: 16px;
 }
 
-.article2 {
-}
-
-.article3 {
-}
-
-.article4 {
+.latestHeader {
   text-align: center;
 }
 
-.section1 {
+.aboutSection {
   background: $color-modern-yellow;
   padding-top: 48px;
 }
 
-.section1row1 {
+.aboutContainer {
   display: flex;
-
   color: black;
 }
 
-.section1col1,
-.section1col2 {
+.aboutCreated,
+.aboutAws {
   padding: 36px 0;
   flex: 1 1 50%;
   text-align: center;
@@ -101,7 +86,7 @@
   border-radius: 2px;
 }
 
-.section1col2code {
+.code {
   background-color: black;
   color: white;
   text-align: left;
@@ -111,7 +96,7 @@
   border-radius: 5px;
 }
 
-.section1aws {
+.aboutAwsContainer {
   display: flex;
   justify-content: center;
 }

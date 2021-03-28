@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.scss";
+import styles from "../styles/Index.module.scss";
 
 export default function Home() {
   return (
@@ -11,60 +11,55 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className={styles.landing}>
-          <div className={"container " + styles.landingBox}>
-            <div className={styles.landingRow}>
-              <div>
-                <h1>Hi, I'm Chris Lapidas</h1>
-              </div>
-
-              <div>
-                I'm a full stack web developer working with React, Angular, and
-                Node.
-              </div>
-            </div>
+        <section className={styles.landing}>
+          <div className={"container " + styles.landingContainer}>
+            <h1>Hi, I'm Chris Lapidas</h1>
+            <p>
+              I'm a full stack web developer working with React, Angular, and
+              Node.
+            </p>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.latest}>
-          <div className={"container " + styles.latestDivs}>
+        <section className={styles.latest}>
+          <div className={"container " + styles.latestContainer}>
             <div className={"elevation-5 " + styles.articleWrapper1}>
-              <div className={styles.article1}>
+              <article className={styles.article1}>
                 Beginner's Guide to CSS Flexbox
-              </div>
+              </article>
             </div>
             <div className={"elevation-5 " + styles.articleWrapper2}>
-              <div className={styles.article2}>
+              <article className={styles.article2}>
                 Anonymous Functions in Javascript
-              </div>
+              </article>
             </div>
             <div className={"elevation-5 " + styles.articleWrapper3}>
-              <div className={styles.article3}>
+              <article className={styles.article3}>
                 Running A Node Application on AWS Elastic Beanstalk
-              </div>
+              </article>
             </div>
             <div className={styles.articleWrapper4}>
-              <div className={styles.article4}>
-                <h1>Latest Articles</h1>
-              </div>
+              <header className={styles.latestHeader}>
+                <h2>Latest Articles</h2>
+              </header>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.section1}>
-          <div className={"container " + styles.section1row1}>
-            <div className={"elevation-2 " + styles.section1col1}>
-              <h4>I created this site using Next.js and React</h4>
+        <section className={styles.aboutSection}>
+          <div className={"container " + styles.aboutContainer}>
+            <div className={"elevation-2 " + styles.aboutCreated}>
+              <h3>I created this site using Next.js and React</h3>
               <div className={styles.iconRow}>
                 <img className={styles.section1icon} src="/next.svg"></img>
                 <img className={styles.section1icon} src="/react.png"></img>
               </div>
             </div>
-            <div className={"elevation-2 " + styles.section1col2}>
-              <h4>I build, deploy, and run using AWS Elastic Beanstalk</h4>
-              <div className={styles.section1aws}>
+            <div className={"elevation-2 " + styles.aboutAws}>
+              <h3>I build, deploy, and run using AWS Elastic Beanstalk</h3>
+              <div className={styles.aboutAwsContainer}>
                 <img className={styles.awsIcon} src="/aws.png"></img>
-                <div className={"elevation-2 " + styles.section1col2code}>
+                <div className={"elevation-2 " + styles.code}>
                   <code>git commit -m "Minor css changes"</code>
                   <br />
                   <code>eb deploy prod-env</code>
@@ -79,7 +74,7 @@ export default function Home() {
               <img className={styles.github} src="/github.png"></img>
             </button>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );
