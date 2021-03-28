@@ -7,7 +7,7 @@
     url("../public/rect.jpg");
   background-size: cover;
   height: calc(100vh - 80px);
-  color: $color-modern-white;
+  color: var(--color-4);
 }
 
 .landingContainer {
@@ -37,11 +37,11 @@
 }
 
 .articleWrapper2 {
-  background: $color-modern-teal;
+  background: var(--color-2);
 }
 
 .articleWrapper3 {
-  background: $color-modern-yellow;
+  background: var(--color-3);
 }
 
 .articleWrapper1,
@@ -67,7 +67,7 @@
 }
 
 .aboutSection {
-  background: $color-modern-yellow;
+  background: var(--color-3);
   padding-top: 48px;
 }
 
@@ -81,7 +81,7 @@
   padding: 36px 0;
   flex: 1 1 50%;
   text-align: center;
-  background-color: $color-modern-white;
+  background-color: var(--color-4);
   margin: 20px;
   border-radius: 2px;
 }
@@ -104,7 +104,7 @@
 .githubButton {
   display: flex;
   align-items: center;
-  background: $color-modern-white;
+  background: var(--color-4);
   border: none;
   padding: 5px 15px;
   border-radius: 2px;

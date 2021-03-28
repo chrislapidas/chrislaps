@@ -1,26 +1,25 @@
 .nav {
-    background-color: #18566e;
-    color: $color-modern-white;
-    padding: 12px 0;
-    border-bottom: 1px solid $color-modern-yellow;
+  background-color: #18566e;
+  color: var(--color-4);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-3);
 }
 
 .list {
-    
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 
-    li {
-        padding-left: 10px;
-    }
+  li {
+    padding-left: 10px;
+  }
 }
 
 .title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .navContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
