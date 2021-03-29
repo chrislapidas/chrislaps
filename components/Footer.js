@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={"container " + styles.footerInner}>
-        <div>Chris Lapidas</div>
-        <div>clapidas@gmail.com</div>
+        <h4>Chris Lapidas</h4>
+        <h5>clapidas@gmail.com</h5>
       </div>
     </footer>
   );

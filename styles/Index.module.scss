@@ -6,30 +6,36 @@
     ),
     url("../public/rect.jpg");
   background-size: cover;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 50px);
   color: var(--color-4);
 }
 
 .landingContainer {
   position: absolute; /* or absolute */
   top: 50%;
+  font-size: 1.6rem;
 }
 
 .latest {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 238, 204, 1) 0%,
-    rgba(255, 243, 220, 1) 50%,
-    rgba(255, 238, 204, 1) 100%
-  );
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--color-4);
 }
 
 .latestContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.articleWrapper1,
+.articleWrapper2,
+.articleWrapper3,
+.articleWrapper4 {
+  flex: 1;
+  height: calc(20vw);
+  max-height: 275px;
+  display: flex;
 }
 
 .articleWrapper1 {
@@ -44,31 +50,22 @@
   background: var(--color-3);
 }
 
-.articleWrapper1,
-.articleWrapper2,
-.articleWrapper3,
-.articleWrapper4 {
-  padding: 0;
-  margin: 0%;
-  position: relative;
-  flex: 1;
-  height: calc(20vw);
-}
-
 .article1,
 .article2,
 .article3 {
   padding: 8%;
-  font-size: 16px;
 }
 
 .latestHeader {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutSection {
-  background: var(--color-3);
   padding-top: 48px;
+  background-color: var(--color-3);
 }
 
 .aboutContainer {
@@ -82,8 +79,16 @@
   flex: 1 1 50%;
   text-align: center;
   background-color: var(--color-4);
-  margin: 20px;
-  border-radius: 2px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.aboutCreated {
+  margin-right: 2rem;
+}
+
+.aboutAws {
+  margin-left: 2rem;
 }
 
 .code {
@@ -104,10 +109,12 @@
 .githubButton {
   display: flex;
   align-items: center;
+  background: none;
+  border-radius: 5px;
   background: var(--color-4);
+  margin-left: 5px;
+  padding: 5px;
   border: none;
-  padding: 5px 15px;
-  border-radius: 2px;
 }
 
 .iconRow {
@@ -124,7 +131,7 @@
   max-width: 128px;
 }
 
-.section1row2 {
+.githubContainer {
   display: flex;
   justify-content: center;
   align-items: center;
