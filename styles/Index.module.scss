@@ -111,10 +111,12 @@
   align-items: center;
   background: none;
   border-radius: 5px;
-  background: var(--color-4);
+  background-color: #eff3f6;
   margin-left: 5px;
-  padding: 5px;
+  padding: 3px 10px;
   border: none;
+
+  background-image: linear-gradient(180deg, #fafbfc, #eff3f6 90%);
 }
 
 .iconRow {
