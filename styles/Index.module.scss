@@ -1,5 +1,5 @@
 .landing {
-  padding: 150px 0 150px 0;
+  padding: 12% 0;
 }
 
 .bgWave {
@@ -34,15 +34,15 @@
 }
 
 .articleWrapper1 {
-  background: #2b99c2;
+  background: #ededed;
 }
 
 .articleWrapper2 {
-  background: var(--color-2);
+  background: #ededed;
 }
 
 .articleWrapper3 {
-  background: var(--color-3);
+  background: #ededed;
 }
 
 .article1,
@@ -56,11 +56,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: right;
 }
 
 .aboutSection {
   padding-top: 48px;
-  background-color: var(--color-4);
 }
 
 .aboutContainer {

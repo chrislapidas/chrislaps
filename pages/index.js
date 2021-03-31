@@ -24,6 +24,16 @@ export default function Home() {
 
       <section className={styles.latest}>
         <div className={"container " + styles.latestContainer}>
+          <div className={styles.articleWrapper4}>
+            <header className={styles.latestHeader}>
+              <a href="/articles">
+                <h2>
+                  Latest <br />
+                  Articles
+                </h2>
+              </a>
+            </header>
+          </div>
           <div className={"elevation-5 " + styles.articleWrapper1}>
             <a href="/articles">
               <article className={styles.article1}>
@@ -44,16 +54,6 @@ export default function Home() {
                 <h4>Running A Node Application on AWS Elastic Beanstalk</h4>
               </a>
             </article>
-          </div>
-          <div className={styles.articleWrapper4}>
-            <header className={styles.latestHeader}>
-              <a href="/articles">
-                <h2>
-                  Latest <br />
-                  Articles
-                </h2>
-              </a>
-            </header>
           </div>
         </div>
       </section>
