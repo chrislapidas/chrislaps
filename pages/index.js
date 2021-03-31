@@ -11,6 +11,8 @@ export default function Home() {
       </Head>
 
       <main>
+        <img className={styles.bgWave} src="/bg-wave-2.svg"></img>
+
         <section className={styles.landing}>
           <div className={"container " + styles.landingContainer}>
             <h1>Hi, I'm Chris Lapidas</h1>
@@ -59,23 +61,23 @@ export default function Home() {
 
         <section className={styles.aboutSection}>
           <div className={"container " + styles.aboutContainer}>
-            <div className={"elevation-2 " + styles.aboutCreated}>
+            <div className={styles.aboutCreated}>
               <h5>
                 I created this site using
                 <br /> Next.js and React
               </h5>
               <div className={styles.iconRow}>
-                <img className={styles.section1icon} src="/next.svg"></img>
-                <img className={styles.section1icon} src="/react.png"></img>
+                <img className={styles.nextIcon} src="/next.svg"></img>
+                <img className={styles.reactIcon} src="/react.svg"></img>
               </div>
             </div>
-            <div className={"elevation-2 " + styles.aboutAws}>
+            <div className={styles.aboutAws}>
               <h5>
                 I build, deploy, and run this site using <br /> AWS Elastic
                 Beanstalk
               </h5>
               <div className={styles.aboutAwsContainer}>
-                <img className={styles.awsIcon} src="/aws.png"></img>
+                <img className={styles.awsIcon} src="/aws.svg"></img>
                 <div className={"elevation-2 " + styles.code}>
                   <code>git commit -m "Minor css changes"</code>
                   <br />
@@ -86,7 +88,6 @@ export default function Home() {
             </div>
           </div>
           <div className={"container " + styles.githubContainer}>
-            <h5>Check it out on</h5>
             <button className={"elevation-1 " + styles.githubButton}>
               <svg
                 viewBox="0 0 16 16"
