@@ -1,37 +1,25 @@
 .landing {
-  background: linear-gradient(
-    124deg,
-    var(--color-3) 0%,
-    var(--color-5) 50%,
-    var(--color-1) 100%
-  );
-
-  height: calc(100vh - 50px);
-  color: var(--color-4);
+  padding: 150px 0 150px 0;
 }
 
 .bgWave {
-  color: red;
-  background-color: var(--color-4);
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .landingContainer {
-  position: absolute; /* or absolute */
-  top: 25%;
   font-size: 1.6rem;
 }
 
 .latest {
-  padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--color-4);
 }
 
 .latestContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -50vh;
 }
 
 .articleWrapper1,

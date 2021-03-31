@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
         rel="stylesheet"
       ></link>
       <Nav />
-      <main>{children}</main>
+      {children}
       <Footer />
     </div>
   );
