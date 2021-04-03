@@ -13,9 +13,8 @@
 
 .bgWave {
   width: 100%;
-  position: absolute;
+  position: inherit;
   z-index: -1;
-  top: 0;
 }
 
 .bgWaveUpsideDown {
@@ -25,15 +24,23 @@
   bottom: 0;
 }
 
+.socialMediaList {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  list-style: none;
+
+  li {
+    padding-left: 10px;
+  }
+}
+
 .positionRelativeBottom {
   position: relative;
 }
 
 .landingContainer {
   font-size: 1.6rem;
-}
-
-.latest {
 }
 
 .latestContainer {

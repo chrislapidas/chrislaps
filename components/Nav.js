@@ -1,4 +1,5 @@
 import styles from "../styles/Nav.module.scss";
+import SocialMedia from "./SocialMedia";
 
 const Nav = () => {
   return (

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import styles from "../styles/Index.module.scss";
+import SocialMedia from "../components/SocialMedia";
 
 export default function Home() {
   return (
@@ -8,11 +9,31 @@ export default function Home() {
       <Head>
         <title>Chris Lapidas | Web Developer</title>
         <meta name="keywords" content="Chris Lapidas, Web Developer" />
-        <link rel="icon" href="/C.jpg" />
+        <link rel="icon" href="C.jpg" />
       </Head>
 
       <main className={styles.indexContainer}>
-        <img className={styles.bgWave} src="/blue-wave.svg"></img>
+        <img className={styles.bgWave} src="/blue-wave-2.svg"></img>
+        <ul className={"container " + styles.socialMediaList}>
+          <li>
+            <SocialMedia
+              className={styles.socialMedia}
+              image="github.svg"
+            ></SocialMedia>
+          </li>
+          <li>
+            <SocialMedia
+              className={styles.socialMedia}
+              image="instagram.svg"
+            ></SocialMedia>
+          </li>
+          <li></li>
+          <SocialMedia
+            className={styles.socialMedia}
+            image="facebook.svg"
+          ></SocialMedia>
+        </ul>
+
         <section className={styles.landing}>
           <div className={"container " + styles.landingContainer}>
             <h1>Hi, I'm Chris Lapidas</h1>
@@ -23,39 +44,37 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.latest}>
-          <div className={"container " + styles.latestContainer}>
-            <div className={styles.articleWrapper4}>
-              <header className={styles.latestHeader}>
-                <a href="/articles">
-                  <h2>
-                    Latest <br />
-                    Articles
-                  </h2>
-                </a>
-              </header>
-            </div>
-            <div className={"elevation-5 " + styles.articleWrapper1}>
+        <section className={"container " + styles.latestContainer}>
+          <div className={styles.articleWrapper4}>
+            <header className={styles.latestHeader}>
               <a href="/articles">
-                <article className={styles.article1}>
-                  <h4>Beginner's Guide to CSS Flexbox</h4>
-                </article>
+                <h2>
+                  Latest <br />
+                  Articles
+                </h2>
               </a>
-            </div>
-            <div className={"elevation-5 " + styles.articleWrapper2}>
-              <article className={styles.article2}>
-                <a>
-                  <h4>Anonymous Functions in Javascript</h4>
-                </a>
+            </header>
+          </div>
+          <div className={"elevation-2 " + styles.articleWrapper1}>
+            <a href="/articles">
+              <article className={styles.article1}>
+                <h4>Beginner's Guide to CSS Flexbox</h4>
               </article>
-            </div>
-            <div className={"elevation-5 " + styles.articleWrapper3}>
-              <article className={styles.article3}>
-                <a>
-                  <h4>Running A Node Application on AWS Elastic Beanstalk</h4>
-                </a>
-              </article>
-            </div>
+            </a>
+          </div>
+          <div className={"elevation-2 " + styles.articleWrapper2}>
+            <article className={styles.article2}>
+              <a>
+                <h4>Anonymous Functions in Javascript</h4>
+              </a>
+            </article>
+          </div>
+          <div className={"elevation-2 " + styles.articleWrapper3}>
+            <article className={styles.article3}>
+              <a>
+                <h4>Running A Node Application on AWS Elastic Beanstalk</h4>
+              </a>
+            </article>
           </div>
         </section>
 
