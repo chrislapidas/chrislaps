@@ -1,8 +1,11 @@
 {
   "articles": [
     {
-      "id": 1,
-      "title": "asdf"
+      "id": 0,
+      "title": "Beginner's Guide to CSS Flex",
+      "date": "2021-03-15",
+      "tags": ["CSS", "Javascript"],
+      "link": "/articles/css-flex"
     }
   ]
 }
