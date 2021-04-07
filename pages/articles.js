@@ -22,10 +22,9 @@ const articles = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1>Articles</h1>
-        <ul className={styles.articleList}>{articleListItems}</ul>
-      </main>
+
+      <h1>Articles</h1>
+      <ul className={styles.articleList}>{articleListItems}</ul>
     </div>
   );
 };

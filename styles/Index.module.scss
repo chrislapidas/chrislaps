@@ -3,19 +3,14 @@
 }
 
 .indexContainer {
-  position: absolute;
-  top: 50px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: auto;
-  overflow-y: scroll;
   font-size: 1.5rem;
+  padding-top: var(--nav-height);
 }
 
 .bgWave {
+  position: absolute;
   width: 100%;
-  position: inherit;
+  top: 50px;
   z-index: -1;
 }
 
@@ -125,7 +120,6 @@
   color: white;
   text-align: left;
   margin: auto 0;
-  margin-right: 22px;
   padding: 10px;
   border-radius: 5px;
   font-size: 1.2rem;
