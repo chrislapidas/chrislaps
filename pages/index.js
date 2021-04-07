@@ -2,8 +2,14 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import styles from "../styles/Index.module.scss";
 import SocialMedia from "../components/SocialMedia";
+import moment from "moment";
+const meta = require("./../articles.json");
 
 export default function Home() {
+  const copyEmailToClipboard = () => {
+    navigator.clipboard.writeText("clapidas@gmail.com");
+  };
+
   return (
     <div>
       <Head>
@@ -57,45 +63,54 @@ export default function Home() {
             </header>
           </div>
           <div className={"elevation-2 " + styles.articleWrapper1}>
-            <a href="/articles">
+            <a href={meta.articles[0].link}>
               <article className={styles.article1}>
-                <h4>Beginner's Guide to CSS Flexbox</h4>
+                <h4>{meta.articles[0].title}</h4>
+                <div className={styles.articleDate}>
+                  {moment(meta.articles[0].date).format("MMMM D, YYYY")}
+                </div>
               </article>
             </a>
           </div>
           <div className={"elevation-2 " + styles.articleWrapper2}>
-            <article className={styles.article2}>
-              <a>
-                <h4>Anonymous Functions in Javascript</h4>
-              </a>
-            </article>
+            <a href={meta.articles[1].link}>
+              <article className={styles.article1}>
+                <h4>{meta.articles[1].title}</h4>
+                <div className={styles.articleDate}>
+                  {moment(meta.articles[1].date).format("MMMM D, YYYY")}
+                </div>
+              </article>
+            </a>
           </div>
           <div className={"elevation-2 " + styles.articleWrapper3}>
-            <article className={styles.article3}>
-              <a>
-                <h4>Running A Node Application on AWS Elastic Beanstalk</h4>
-              </a>
-            </article>
+            <a href={meta.articles[2].link}>
+              <article className={styles.article1}>
+                <h4>{meta.articles[2].title}</h4>
+                <div className={styles.articleDate}>
+                  {moment(meta.articles[2].date).format("MMMM D, YYYY")}
+                </div>
+              </article>
+            </a>
           </div>
         </section>
 
         <section className={styles.aboutSection}>
           <div className={"container " + styles.aboutContainer}>
             <div className={styles.aboutCreated}>
-              <h5>
+              <div>
                 I created this site using
-                <br /> Next.js and React
-              </h5>
+                <br /> <b>Next.js</b> and <b>React</b>
+              </div>
               <div className={styles.iconRow}>
                 <img className={styles.nextIcon} src="/next.svg"></img>
                 <img className={styles.reactIcon} src="/react.svg"></img>
               </div>
             </div>
             <div className={styles.aboutAws}>
-              <h5>
-                I build, deploy, and run this site using <br /> AWS Elastic
-                Beanstalk
-              </h5>
+              <div>
+                I build, deploy, and run this site using <br />{" "}
+                <b>AWS Elastic Beanstalk</b>
+              </div>
               <div className={styles.aboutAwsContainer}>
                 <img className={styles.awsIcon} src="/aws.svg"></img>
                 <div className={"elevation-2 " + styles.code}>
@@ -107,15 +122,23 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={"container " + styles.githubContainer}>
+          <div className={"container " + styles.hireMeContainer}>
             <div>Want to hire me? Send me an email & let's chat!</div>
 
-            <div>
-              <a>clapidas@gmail.com</a>
+            <div className={styles.emailParentButton}>
+              <a href="mailto:clapidas@gmail.com">
+                <button className={"elevation-1 " + styles.emailButton}>
+                  clapidas@gmail.com
+                </button>
+              </a>
+
+              <button
+                onClick={copyEmailToClipboard}
+                className={"elevation-1 " + styles.clipboardButton}
+              >
+                <img className={styles.clipboard} src="/clipboard.svg"></img>
+              </button>
             </div>
-            <button className={"elevation-1 " + styles.githubButton}>
-              <h5>Github</h5>
-            </button>
           </div>
         </section>
         <div className={styles.positionRelativeBottom}>

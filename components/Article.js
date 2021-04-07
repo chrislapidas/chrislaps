@@ -5,7 +5,7 @@ import Head from "next/head";
 import Tags from "./Tags";
 
 const Article = ({ id, children }) => {
-  const date = moment(meta.articles[id].date).format("MMMM Do, YYYY");
+  const date = moment(meta.articles[id].date).format("MMMM D, YYYY");
 
   return (
     <div className={"container " + styles.articleContainer}>

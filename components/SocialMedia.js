@@ -1,9 +1,21 @@
 import styles from "../styles/SocialMedia.module.scss";
+import React, { useState } from "react";
 
 const SocialMedia = ({ href, src }) => {
+  const [hovered, setHovered] = useState(false);
+  const mouseEnter = () => setHovered(true);
+  const mouseLeave = () => setHovered(false);
+  let iconHovered = hovered ? styles.socialMediaIconHovered : "";
+
   return (
-    <a href={href}>
-      <img className={styles.socialMediaIcon} src={src}></img>
+    <a href={href} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+      <img
+        className={[
+          styles.socialMediaIcon,
+          hovered ? styles.socialMediaIconHovered : "",
+        ].join(" ")}
+        src={src}
+      ></img>
     </a>
   );
 };

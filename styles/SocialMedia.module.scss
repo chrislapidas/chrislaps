@@ -1,5 +1,10 @@
 .socialMediaIcon {
   width: 24px;
   height: 24px;
-  opacity: 75%;
+  opacity: 60%;
+  transition: opacity 150ms ease-in-out;
+}
+
+.socialMediaIconHovered {
+  opacity: 90%;
 }

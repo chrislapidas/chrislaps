@@ -97,8 +97,8 @@
   flex: 1 1 50%;
   text-align: center;
   background: white;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--simple-shadow);
+  box-shadow: var(--simple-shadow);
   border-radius: 10px;
   padding: 5% 0;
 }
@@ -130,17 +130,41 @@
   justify-content: center;
 }
 
-.githubButton {
+.emailParentButton {
+  display: flex;
+  margin-left: 10px;
+  -webkit-box-shadow: var(--simple-shadow);
+  box-shadow: var(--simple-shadow);
+}
+.emailButton,
+.clipboardButton {
   display: flex;
   align-items: center;
-  background: none;
-  border-radius: 5px;
-  background-color: #eff3f6;
-  margin-left: 5px;
-  padding: 3px 10px;
-  border: none;
 
-  background-image: linear-gradient(180deg, #fafbfc, #eff3f6 90%);
+  background-color: white;
+  height: 40px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0 10px;
+  transition: all 150ms ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background: #ebebeb;
+  }
+}
+
+.articleDate {
+  color: #4f4f4f;
+}
+
+.emailButton {
+  border-radius: 5px 0 0 5px;
+  border-right: 1px solid #bababa;
+}
+
+.clipboardButton {
+  border-radius: 0 5px 5px 0;
 }
 
 .iconRow {
@@ -162,23 +186,13 @@
   padding-right: 20px;
 }
 
-.githubContainer {
+.hireMeContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
   margin-top: 10px;
-}
-
-.github {
-  max-height: 30px;
-  max-width: 30px;
-  margin-left: 5px;
-}
-
-.githubIcon {
-  padding-right: 5px;
 }
 
 @media (max-width: 1100px) {
@@ -255,4 +269,9 @@
   .awsIcon {
     display: none;
   }
+}
+
+.clipboard {
+  height: 20px;
+  width: 20px;
 }

@@ -1,6 +1,20 @@
 {
   "articles": [
     {
+      "id": 2,
+      "title": "Running a Node Application on AWS Elastic Beanstalk",
+      "date": "2021-04-02",
+      "tags": ["Node", "Javascript", "AWS"],
+      "link": "/articles/node-application-aws-elastic-beanstalk"
+    },
+    {
+      "id": 1,
+      "title": "Anonymous Functions in Javascript",
+      "date": "2021-03-22",
+      "tags": ["Javascript"],
+      "link": "/articles/javascript-anonymous-functions"
+    },
+    {
       "id": 0,
       "title": "Beginner's Guide to CSS Flex",
       "date": "2021-03-15",

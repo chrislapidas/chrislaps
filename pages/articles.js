@@ -1,13 +1,13 @@
 const meta = require("./../articles.json");
 import styles from "../styles/Articles.module.scss";
 import Head from "next/head";
-import * as moment from "Moment";
+import * as moment from "moment";
 
 const articles = () => {
   const articleListItems = meta.articles.map((article) => (
     <li key={article.id}>
       <a href={article.link}>
-        {article.title} - {moment(article.date).format("MMMM Do, YYYY")}
+        {article.title} - {moment(article.date).format("MMMM D, YYYY")}
       </a>
     </li>
   ));
