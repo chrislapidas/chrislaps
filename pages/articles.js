@@ -15,12 +15,12 @@ const articles = () => {
   return (
     <div className={"container " + styles.articlesContainer}>
       <Head>
-        <title>Articles, Chris Lapidas | Web Developer</title>
+        <title>Articles | Chris Lapidas | Web Developer</title>
         <meta
           name="keywords"
-          content="Articles, Chris Lapidas | Web Developer"
+          content="Articles | Chris Lapidas | Web Developer"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./../C.jpg" />
       </Head>
 
       <h1>Articles</h1>

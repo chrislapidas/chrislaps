@@ -10,7 +10,7 @@ const Article = ({ id, children }) => {
   return (
     <div className={"container " + styles.articleContainer}>
       <Head>
-        <title>{meta.articles[id].title}, Chris Lapidas | Web Developer</title>
+        <title>{meta.articles[id].title} | Chris Lapidas | Web Developer</title>
         <meta
           name="keywords"
           content={"Chris Lapidas, Web Developer " + meta.articles[id].tags}

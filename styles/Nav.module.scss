@@ -1,6 +1,6 @@
 .nav {
   position: fixed;
-  width: 100vw;
+  width: calc(100vw - 6px);
   background-color: white;
   z-index: 10;
 }
