@@ -62,7 +62,7 @@ export default function Home() {
               </a>
             </header>
           </div>
-          <div className={"elevation-2 " + styles.articleWrapper1}>
+          <div className={styles.articleWrapper1}>
             <a href={meta.articles[0].link}>
               <article className={styles.article}>
                 <h5>{meta.articles[0].title}</h5>
@@ -72,7 +72,7 @@ export default function Home() {
               </article>
             </a>
           </div>
-          <div className={"elevation-2 " + styles.articleWrapper2}>
+          <div className={styles.articleWrapper2}>
             <a href={meta.articles[1].link}>
               <article className={styles.article}>
                 <h5>{meta.articles[1].title}</h5>
@@ -82,7 +82,7 @@ export default function Home() {
               </article>
             </a>
           </div>
-          <div className={"elevation-2 " + styles.articleWrapper3}>
+          <div className={styles.articleWrapper3}>
             <a href={meta.articles[2].link}>
               <article className={styles.article}>
                 <h5>{meta.articles[2].title}</h5>
