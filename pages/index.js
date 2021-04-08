@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.indexContainer}>
-        <img className={styles.bgWave} src="/blue-bg.svg"></img>
+        <img className={styles.bgWave} src="/blue-tri-2.svg"></img>
         <ul className={"container " + styles.socialMediaList}>
           <li>
             <SocialMedia
@@ -45,8 +45,8 @@ export default function Home() {
           <div className={"container " + styles.landingContainer}>
             <h1>Hi, I'm Chris Lapidas</h1>
             <div>
-              I'm a full stack web developer working with React, Angular, and
-              Node.
+              I'm a full stack web developer currently working with React,
+              Angular, and Node.
             </div>
           </div>
         </section>
@@ -64,8 +64,8 @@ export default function Home() {
           </div>
           <div className={"elevation-2 " + styles.articleWrapper1}>
             <a href={meta.articles[0].link}>
-              <article className={styles.article1}>
-                <h4>{meta.articles[0].title}</h4>
+              <article className={styles.article}>
+                <h5>{meta.articles[0].title}</h5>
                 <div className={styles.articleDate}>
                   {moment(meta.articles[0].date).format("MMMM D, YYYY")}
                 </div>
@@ -74,8 +74,8 @@ export default function Home() {
           </div>
           <div className={"elevation-2 " + styles.articleWrapper2}>
             <a href={meta.articles[1].link}>
-              <article className={styles.article1}>
-                <h4>{meta.articles[1].title}</h4>
+              <article className={styles.article}>
+                <h5>{meta.articles[1].title}</h5>
                 <div className={styles.articleDate}>
                   {moment(meta.articles[1].date).format("MMMM D, YYYY")}
                 </div>
@@ -84,8 +84,8 @@ export default function Home() {
           </div>
           <div className={"elevation-2 " + styles.articleWrapper3}>
             <a href={meta.articles[2].link}>
-              <article className={styles.article1}>
-                <h4>{meta.articles[2].title}</h4>
+              <article className={styles.article}>
+                <h5>{meta.articles[2].title}</h5>
                 <div className={styles.articleDate}>
                   {moment(meta.articles[2].date).format("MMMM D, YYYY")}
                 </div>
@@ -109,10 +109,14 @@ export default function Home() {
             <div className={styles.aboutAws}>
               <div>
                 I build, deploy, and run this site using <br />{" "}
-                <b>AWS Elastic Beanstalk</b>
+                <a href="https://aws.amazon.com/elasticbeanstalk/">
+                  <b>AWS Elastic Beanstalk</b>
+                </a>
               </div>
               <div className={styles.aboutAwsContainer}>
-                <img className={styles.awsIcon} src="/aws.svg"></img>
+                <a href="https://aws.amazon.com/" className={styles.awsLink}>
+                  <img className={styles.awsIcon} src="/aws.svg"></img>
+                </a>
                 <div className={"elevation-2 " + styles.code}>
                   <code>git commit -m "Minor css changes"</code>
                   <br />
@@ -141,12 +145,14 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* 
         <div className={styles.positionRelativeBottom}>
           <img
             className={styles.bgWaveUpsideDown}
             src="/bg-wave-upside-down.svg"
           ></img>
         </div>
+        */}
       </main>
     </div>
   );

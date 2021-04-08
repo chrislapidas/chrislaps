@@ -8,7 +8,7 @@ const Article = ({ id, children }) => {
   const date = moment(meta.articles[id].date).format("MMMM D, YYYY");
 
   return (
-    <div className={"container " + styles.articleContainer}>
+    <main className={"container " + styles.articleContainer}>
       <Head>
         <title>{meta.articles[id].title} | Chris Lapidas | Web Developer</title>
         <meta
@@ -22,7 +22,7 @@ const Article = ({ id, children }) => {
 
       <Tags tags={meta.articles[id].tags}></Tags>
       <div className={styles.content}>{children}</div>
-    </div>
+    </main>
   );
 };
 

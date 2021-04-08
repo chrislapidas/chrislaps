@@ -3,14 +3,13 @@
 }
 
 .indexContainer {
-  font-size: 1.5rem;
   padding-top: var(--nav-height);
 }
 
 .bgWave {
   position: absolute;
   width: 100%;
-  top: 50px;
+  top: var(--nav-height);
   z-index: -1;
 }
 
@@ -37,11 +36,10 @@
 }
 
 .landingContainer {
-  font-size: 1.6rem;
 }
 
 .latestContainer {
-  padding: 7% 10% 13% 10%;
+  padding: 3% 10% 10% 10%;
 
   display: flex;
   align-items: center;
@@ -53,11 +51,11 @@
 .articleWrapper3,
 .articleWrapper4 {
   flex: 1;
-  height: 23vw;
+  height: 18.4vw;
   max-height: 252px;
   display: flex;
   margin: 1%;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 }
 
 .articleWrapper1,
@@ -70,10 +68,12 @@
   );
 }
 
-.article1,
-.article2,
-.article3 {
+.article {
   padding: 8%;
+  display: flex;
+  flex-direction: column;
+  height: 84%;
+  justify-content: space-between;
 }
 
 .latestHeader {
@@ -99,7 +99,7 @@
   background: white;
   -webkit-box-shadow: var(--simple-shadow);
   box-shadow: var(--simple-shadow);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   padding: 5% 0;
 }
 
@@ -122,7 +122,9 @@
   margin: auto 0;
   padding: 10px;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 11px;
+  line-height: 20px;
+  max-width: 80%;
 }
 
 .aboutAwsContainer {
@@ -133,8 +135,6 @@
 .emailParentButton {
   display: flex;
   margin-left: 10px;
-  -webkit-box-shadow: var(--simple-shadow);
-  box-shadow: var(--simple-shadow);
 }
 .emailButton,
 .clipboardButton {
@@ -144,8 +144,8 @@
   background-color: white;
   height: 40px;
   border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  -webkit-box-shadow: var(--simple-shadow);
+  box-shadow: var(--simple-shadow);
   padding: 0 10px;
   transition: all 150ms ease-in-out;
   &:hover {
@@ -156,15 +156,16 @@
 
 .articleDate {
   color: #4f4f4f;
+  text-align: right;
 }
 
 .emailButton {
-  border-radius: 5px 0 0 5px;
+  border-radius: 10px 0 0 10px;
   border-right: 1px solid #bababa;
 }
 
 .clipboardButton {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
 }
 
 .iconRow {
@@ -182,8 +183,12 @@
 }
 
 .awsIcon {
-  max-width: 80px;
+  width: 80px;
   padding-right: 20px;
+}
+
+.awsLink {
+  margin: auto 0;
 }
 
 .hireMeContainer {
@@ -196,9 +201,6 @@
 }
 
 @media (max-width: 1100px) {
-  .bgWave {
-    transform: scaleY(1.4);
-  }
   .latestContainer {
     display: grid;
     grid-template-columns: 25% 25%;
@@ -209,7 +211,7 @@
   .articleWrapper2,
   .articleWrapper3,
   .articleWrapper4 {
-    height: calc(24vw);
+    height: calc(19.6vw);
   }
 
   .aboutContainer {
@@ -221,7 +223,7 @@
   .aboutCreated,
   .aboutAws {
     margin: 0;
-    width: 80%;
+    width: 70%;
   }
 
   .aboutCreated {
@@ -231,7 +233,7 @@
 
 @media (max-width: 900px) {
   .bgWave {
-    transform: scaleY(2.4);
+    transform: scaleY(2);
   }
   .latestContainer {
     display: grid;
@@ -243,12 +245,12 @@
   .articleWrapper2,
   .articleWrapper3,
   .articleWrapper4 {
-    height: calc(29vw);
+    height: calc(23.6vw);
   }
 
   .aboutCreated,
   .aboutAws {
-    width: 100%;
+    width: 85%;
   }
 }
 
@@ -263,11 +265,37 @@
   .articleWrapper2,
   .articleWrapper3,
   .articleWrapper4 {
-    height: calc(39vw);
+    height: calc(31.4vw);
   }
 
   .awsIcon {
     display: none;
+  }
+  .aboutCreated,
+  .aboutAws {
+    width: 100%;
+  }
+
+  .nextIcon {
+    max-width: 96px;
+    padding: 0 12px;
+  }
+
+  .reactIcon {
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .latestContainer {
+    padding: 7% 0% 10% 0%;
+  }
+
+  .articleWrapper1,
+  .articleWrapper2,
+  .articleWrapper3,
+  .articleWrapper4 {
+    height: calc(39vw);
   }
 }
 
