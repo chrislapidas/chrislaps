@@ -44,10 +44,10 @@ export default function Home() {
         <section className={styles.landing}>
           <div className={"container " + styles.landingContainer}>
             <h1>Hi, I'm Chris Lapidas</h1>
-            <div>
+            <h5>
               I'm a full stack web developer currently working with React,
               Angular, and Node.
-            </div>
+            </h5>
           </div>
         </section>
 
@@ -127,12 +127,12 @@ export default function Home() {
             </div>
           </div>
           <div className={"container " + styles.hireMeContainer}>
-            <div>Want to hire me? Send me an email & let's chat!</div>
+            <h5>Want to hire me? Send me an email!</h5>
 
             <div className={styles.emailParentButton}>
               <a href="mailto:clapidas@gmail.com">
                 <button className={"elevation-1 " + styles.emailButton}>
-                  clapidas@gmail.com
+                  <b>clapidas@gmail.com</b>
                 </button>
               </a>
 
