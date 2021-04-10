@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.indexContainer}>
-        <img className={styles.bgWave} src="/blue-tri-2.svg"></img>
+        <img className={styles.bgWave} src="/blue-tri-4.svg"></img>
         <ul className={"container " + styles.socialMediaList}>
           <li>
             <SocialMedia
@@ -45,8 +45,8 @@ export default function Home() {
           <div className={"container " + styles.landingContainer}>
             <h1>Hi, I'm Chris Lapidas</h1>
             <h5>
-              I'm a full stack web developer currently working with React,
-              Angular, and Node.
+              I'm a full stack web developer working with React, Angular, and
+              Node.
             </h5>
           </div>
         </section>
