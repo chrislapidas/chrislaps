@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.indexContainer}>
-        <img className={styles.bgWave} src="/blue-tri-4.svg"></img>
+        <img className={styles.bgWave} src="/mac2.svg"></img>
         <ul className={"container " + styles.socialMediaList}>
           <li>
             <SocialMedia
