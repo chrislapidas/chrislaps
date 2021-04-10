@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.indexContainer}>
-        <img className={styles.bgWave} src="/mac2.svg"></img>
+        <img className={styles.bgWave} src="/mac4.svg"></img>
         <ul className={"container " + styles.socialMediaList}>
           <li>
             <SocialMedia
@@ -94,6 +94,20 @@ export default function Home() {
           </div>
         </section>
 
+        <section className={"container"}>
+          <div className={styles.aboutMeContainer}>
+            <div className={styles.aboutMeText}>
+              I've worked for the past 4 years as a full time web developer
+              contributing towards projects large and small using a wide range
+              of web tech. Previously I spent 5 years serving active duty US
+              Navy while touring the country as a guitarist.
+            </div>
+            <div className={styles.aboutMeTitle}>
+              <h2>About Me</h2>
+            </div>
+          </div>
+        </section>
+
         <section className={styles.aboutSection}>
           <div className={"container " + styles.aboutContainer}>
             <div className={styles.aboutCreated}>
@@ -127,7 +141,7 @@ export default function Home() {
             </div>
           </div>
           <div className={"container " + styles.hireMeContainer}>
-            <h5>Want to hire me? Send me an email!</h5>
+            <h6>Want to hire me? Send me an email!</h6>
 
             <div className={styles.emailParentButton}>
               <a href="mailto:clapidas@gmail.com">

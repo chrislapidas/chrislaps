@@ -5,7 +5,6 @@ const SocialMedia = ({ href, src }) => {
   const [hovered, setHovered] = useState(false);
   const mouseEnter = () => setHovered(true);
   const mouseLeave = () => setHovered(false);
-  let iconHovered = hovered ? styles.socialMediaIconHovered : "";
 
   return (
     <a href={href} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
