@@ -171,6 +171,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <div className={"container"}>
+          <hr></hr>
+        </div>
+
+        <Footer></Footer>
+
         {/* 
         <div className={styles.positionRelativeBottom}>
           <img

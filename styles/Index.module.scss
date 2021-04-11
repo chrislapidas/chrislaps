@@ -120,10 +120,11 @@
   flex: 1 1 50%;
   text-align: center;
   background: var(--light-blue-2);
-  //-webkit-box-shadow: var(--simple-shadow);
-  //box-shadow: var(--simple-shadow);
+  -webkit-box-shadow: var(--simple-shadow);
+  box-shadow: var(--simple-shadow);
   border-radius: var(--border-radius);
   padding: 5% 0;
+  //border: 1px solid var(--light-blue-3);
 }
 
 .aboutCreated {
@@ -160,15 +161,15 @@
   margin-left: 10px;
   -webkit-box-shadow: var(--simple-shadow);
   box-shadow: var(--simple-shadow);
-  border-radius: 10px;
-  border: 2px solid #ebebeb;
+  border-radius: 14px;
+  border: 2px solid var(--light-blue-2);
 }
 .emailButton,
 .clipboardButton {
   display: flex;
   align-items: center;
   border: none;
-  background-color: var(--light-gray-2);
+  background-color: var(--light-blue);
   height: 40px;
   font-size: 1rem;
   -webkit-box-shadow: none;
@@ -177,7 +178,7 @@
   transition: var(--transition);
   &:hover {
     cursor: pointer;
-    background: #ebebeb;
+    background: var(--light-blue-2);
   }
 }
 
@@ -188,7 +189,7 @@
 
 .emailButton {
   border-radius: 10px 0 0 10px;
-  border-right: 1px solid #bababa;
+  border-right: 2px solid var(--light-blue-2);
 }
 
 .clipboardButton {
