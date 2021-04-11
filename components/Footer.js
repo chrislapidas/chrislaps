@@ -7,7 +7,7 @@ const Footer = () => {
       <div className={"container " + styles.footerInner}>
         <div>
           <h4>Chris Lapidas</h4>
-          <div> Copyright &#169; 2021 chrislaps.com</div>
+          <div> Copyright &#169; 2021 </div>
         </div>
 
         <div>

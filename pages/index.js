@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.indexContainer}>
-        <img className={styles.bgWave} src="/mac4.svg"></img>
+        <img className={styles.bgWave} src="/blue-stripe.svg"></img>
         <SocialMediaGroup></SocialMediaGroup>
 
         <section className={styles.landing}>
@@ -90,7 +90,7 @@ export default function Home() {
               <p>
                 I've spent the past 6 years creating and learning everything I
                 can about web tech and trends. Anything that can make my work
-                better and my life easier is always at the top of my to do list.
+                better and my life easier is always at the top of my to-do list.
               </p>
               <hr></hr>
               <p>
