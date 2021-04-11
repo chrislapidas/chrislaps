@@ -1,33 +1,20 @@
 import styles from "../styles/Footer.module.scss";
-import SocialMedia from "./SocialMedia";
+import SocialMediaGroup from "./SocialMediaGroup";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={"container " + styles.footerInner}>
-        <h4>Chris Lapidas</h4>
-        <h5>clapidas@gmail.com</h5>
+        <div>
+          <h4>Chris Lapidas</h4>
+          <div> Copyright &#169; 2021 chrislaps.com</div>
+        </div>
+
+        <div>
+          <h5>clapidas@gmail.com</h5>
+          <SocialMediaGroup></SocialMediaGroup>
+        </div>
       </div>
-      <ul className={"container " + styles.socialMediaList}>
-        <li>
-          <SocialMedia
-            src="github.svg"
-            href="https://github.com/chrislapidas"
-          ></SocialMedia>
-        </li>
-        <li>
-          <SocialMedia
-            src="instagram.svg"
-            href="https://www.instagram.com/chrislapidas/"
-          ></SocialMedia>
-        </li>
-        <li>
-          <SocialMedia
-            src="facebook.svg"
-            href="https://www.facebook.com/chris.lapidas"
-          ></SocialMedia>
-        </li>
-      </ul>
     </footer>
   );
 };

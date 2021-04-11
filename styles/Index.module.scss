@@ -21,17 +21,6 @@
   bottom: 0;
 }
 
-.socialMediaList {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 10px;
-  list-style: none;
-
-  li {
-    padding-left: 10px;
-  }
-}
-
 .positionRelativeBottom {
   position: relative;
 }
@@ -73,20 +62,31 @@
   height: 18.4vw;
   max-height: 252px;
   display: flex;
-  margin: 1%;
-  border-radius: var(--border-radius);
+  //margin: 1%;
+  //border-radius: var(--border-radius);
 }
 
 .articleWrapper1,
 .articleWrapper2,
 .articleWrapper3 {
-  background: var(--light-blue-2);
-  -webkit-box-shadow: var(--simple-shadow);
-  box-shadow: var(--simple-shadow);
+  //-webkit-box-shadow: var(--simple-shadow);
+  //box-shadow: var(--simple-shadow);
   transition: var(--transition);
   &:hover {
-    background: var(--light-blue);
+    background: var(--light-blue-2);
   }
+}
+
+.articleWrapper1 {
+  background: var(--light-blue);
+}
+
+.articleWrapper2 {
+  background: var(--light-blue-2);
+}
+
+.articleWrapper3 {
+  background: var(--light-blue-4);
 }
 
 .article {
@@ -105,9 +105,6 @@
   text-align: right;
 }
 
-.aboutSection {
-}
-
 .aboutContainer {
   top: -100px;
   position: relative;
@@ -120,9 +117,9 @@
   flex: 1 1 50%;
   text-align: center;
   background: var(--light-blue-2);
-  -webkit-box-shadow: var(--simple-shadow);
-  box-shadow: var(--simple-shadow);
-  border-radius: var(--border-radius);
+  //-webkit-box-shadow: var(--simple-shadow);
+  //box-shadow: var(--simple-shadow);
+  //border-radius: var(--border-radius);
   padding: 5% 0;
   //border: 1px solid var(--light-blue-3);
 }
@@ -244,8 +241,8 @@
   .latestContainer {
     display: grid;
     grid-template-columns: 25% 25%;
-    row-gap: 1vw;
-    column-gap: 1vw;
+    //row-gap: 1vw;
+    //column-gap: 1vw;
   }
   .articleWrapper1,
   .articleWrapper2,
@@ -282,8 +279,6 @@
   .latestContainer {
     display: grid;
     grid-template-columns: 30% 30%;
-    row-gap: 1vw;
-    column-gap: 1vw;
   }
   .articleWrapper1,
   .articleWrapper2,
@@ -309,8 +304,6 @@
   .latestContainer {
     display: grid;
     grid-template-columns: 40% 40%;
-    row-gap: 1vw;
-    column-gap: 1vw;
   }
   .articleWrapper1,
   .articleWrapper2,

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import styles from "../styles/Index.module.scss";
 import SocialMedia from "../components/SocialMedia";
+import SocialMediaGroup from "../components/SocialMediaGroup";
 import moment from "moment";
 const meta = require("./../articles.json");
 
@@ -20,26 +21,7 @@ export default function Home() {
 
       <main className={styles.indexContainer}>
         <img className={styles.bgWave} src="/mac4.svg"></img>
-        <ul className={"container " + styles.socialMediaList}>
-          <li>
-            <SocialMedia
-              src="github.svg"
-              href="https://github.com/chrislapidas"
-            ></SocialMedia>
-          </li>
-          <li>
-            <SocialMedia
-              src="instagram.svg"
-              href="https://www.instagram.com/chrislapidas/"
-            ></SocialMedia>
-          </li>
-          <li>
-            <SocialMedia
-              src="facebook.svg"
-              href="https://www.facebook.com/chris.lapidas"
-            ></SocialMedia>
-          </li>
-        </ul>
+        <SocialMediaGroup></SocialMediaGroup>
 
         <section className={styles.landing}>
           <div className={"container " + styles.landingContainer}>
