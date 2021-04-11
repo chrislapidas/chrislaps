@@ -1,5 +1,5 @@
 .landing {
-  padding: 10% 0;
+  padding: 15% 0;
 }
 
 .indexContainer {
@@ -11,6 +11,7 @@
   width: 100%;
   top: var(--nav-height);
   z-index: -1;
+  transform: scaleY(1.7);
 }
 
 .bgWaveUpsideDown {
@@ -39,17 +40,21 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5% 0 15% 0;
+  padding: 5% 0 25% 0;
 
   div {
     padding: 0 5%;
   }
 }
+
+.aboutMeTitle {
+  text-align: right;
+}
 .landingContainer {
 }
 
 .latestContainer {
-  padding: 0 10% 10% 10%;
+  padding: 0 10% 15% 10%;
 
   display: flex;
   align-items: center;
@@ -220,7 +225,7 @@
 
 @media (max-width: 1500px) {
   .bgWave {
-    transform: scaleY(1.5);
+    transform: scaleY(2.2);
   }
 }
 

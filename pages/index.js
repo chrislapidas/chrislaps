@@ -45,8 +45,8 @@ export default function Home() {
           <div className={"container " + styles.landingContainer}>
             <h1>Hi, I'm Chris Lapidas</h1>
             <h5>
-              I'm a full stack web developer working with React, Angular, and
-              Node.
+              I'm a full stack web developer from Rhode Island working with
+              React, Angular, and Node.
             </h5>
           </div>
         </section>
@@ -96,14 +96,26 @@ export default function Home() {
 
         <section className={"container"}>
           <div className={styles.aboutMeContainer}>
-            <div className={styles.aboutMeText}>
-              I've worked for the past 4 years as a full time web developer
-              contributing towards projects large and small using a wide range
-              of web tech. Previously I spent 5 years serving active duty US
-              Navy while touring the country as a guitarist.
-            </div>
             <div className={styles.aboutMeTitle}>
               <h2>About Me</h2>
+            </div>
+            <div className={styles.aboutMeText}>
+              <p>
+                I'm a web developer, designer, and admirer. My work always
+                focuses on usability and simplicity.
+              </p>
+              <hr></hr>
+              <p>
+                I've spent the past 6 years creating and learning everything I
+                can about web tech and trends. Anything that can make my work
+                better and my life easier is always at the top of my to do list.
+              </p>
+              <hr></hr>
+              <p>
+                Previously I spent 5 years serving active duty US Navy while
+                touring the country as a guitarist. My hobbies include hiking,
+                cooking, and spending lots of time with friends and family.
+              </p>
             </div>
           </div>
         </section>
