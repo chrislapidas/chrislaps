@@ -43,7 +43,7 @@ export default function Home() {
 
         <section className={styles.landing}>
           <div className={"container " + styles.landingContainer}>
-            <h1>Hi, I'm Chris Lapidas</h1>
+            <h1>Hi, I'm Chris Lapidas.</h1>
             <h5>
               I'm a full stack web developer from Rhode Island working with
               React, Angular, and Node.
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={"container"}>
+        <section className={"container " + styles.aboutMeSection}>
           <div className={styles.aboutMeContainer}>
             <div className={styles.aboutMeTitle}>
               <h2>About Me</h2>

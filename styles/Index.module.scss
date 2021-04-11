@@ -47,6 +47,10 @@
   }
 }
 
+.aboutMeSection {
+  background: var(--light-blue);
+}
+
 .aboutMeTitle {
   text-align: right;
 }
@@ -76,12 +80,12 @@
 .articleWrapper1,
 .articleWrapper2,
 .articleWrapper3 {
-  background: var(--light-green);
+  background: var(--light-blue-2);
   -webkit-box-shadow: var(--simple-shadow);
   box-shadow: var(--simple-shadow);
   transition: var(--transition);
   &:hover {
-    background: white;
+    background: var(--light-blue);
   }
 }
 
@@ -105,6 +109,8 @@
 }
 
 .aboutContainer {
+  top: -100px;
+  position: relative;
   display: flex;
   color: black;
 }
@@ -113,21 +119,19 @@
 .aboutAws {
   flex: 1 1 50%;
   text-align: center;
-
-  -webkit-box-shadow: var(--simple-shadow);
-  box-shadow: var(--simple-shadow);
+  background: var(--light-blue-2);
+  //-webkit-box-shadow: var(--simple-shadow);
+  //box-shadow: var(--simple-shadow);
   border-radius: var(--border-radius);
   padding: 5% 0;
 }
 
 .aboutCreated {
   margin-right: 2rem;
-  background: var(--light-gray);
 }
 
 .aboutAws {
   margin-left: 2rem;
-  background: var(--light-gray);
 }
 
 .aboutAwsContainer {
