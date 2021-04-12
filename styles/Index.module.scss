@@ -37,7 +37,8 @@
 }
 
 .aboutMeSection {
-  background: var(--blue-1);
+  color: white;
+  background: var(--blue-4);
 }
 
 .aboutMeTitle {
@@ -75,10 +76,9 @@
   background: var(--blue-3);
   transition: var(--transition);
   border-radius: 10%;
-  filter: brightness(120%);
-
+  color: white;
   &:hover {
-    filter: brightness(135%);
+    background: var(--blue-4);
   }
 }
 
@@ -109,7 +109,7 @@
 .aboutAws {
   flex: 1 1 50%;
   text-align: center;
-  background: var(--blue-2);
+  background: var(--blue-1);
 
   //-webkit-box-shadow: var(--simple-shadow);
   //box-shadow: var(--simple-shadow);
@@ -142,6 +142,10 @@
   max-width: 80%;
 }
 
+.socialMediaGroup {
+  padding-top: 10px;
+}
+
 .aboutAwsContainer {
   display: flex;
   justify-content: center;
@@ -153,7 +157,6 @@
   //-webkit-box-shadow: var(--simple-shadow);
   //box-shadow: var(--simple-shadow);
   border-radius: 14px;
-  border: 2px solid var(--blue-2);
 }
 .emailButton,
 .clipboardButton {

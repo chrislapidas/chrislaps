@@ -11,8 +11,8 @@ const Footer = () => {
         </div>
 
         <div>
-          <h5>clapidas@gmail.com</h5>
           <SocialMediaGroup></SocialMediaGroup>
+          <h5>clapidas@gmail.com</h5>
         </div>
       </div>
     </footer>

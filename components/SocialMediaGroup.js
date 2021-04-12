@@ -3,7 +3,7 @@ import SocialMedia from "./SocialMedia";
 
 const SocialMediaGroup = () => {
   return (
-    <ul className={"container " + styles.socialMediaList}>
+    <ul className={styles.socialMediaList}>
       <li>
         <SocialMedia
           src="github.svg"
