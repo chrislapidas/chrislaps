@@ -5,17 +5,17 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <div className={"container " + styles.navContainer}>
-        <div className={styles.title}>
-          <a href="/">
+        <a href="/">
+          <div className={styles.title}>
             <h3>CL</h3>
-          </a>
-        </div>
+          </div>
+        </a>
         <ul className={styles.list}>
-          <li>
-            <a href="/articles">
+          <a href="/articles">
+            <li>
               <h4>Articles</h4>
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
       </div>
     </nav>

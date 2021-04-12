@@ -6,7 +6,8 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={"container " + styles.footerInner}>
         <div>
-          <h4>Chris Lapidas</h4>
+          <h3>Chris Lapidas</h3>
+          <div>ChrisLaps.com</div>
           <div> Copyright &#169; 2021 </div>
         </div>
 

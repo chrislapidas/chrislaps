@@ -21,7 +21,9 @@ export default function Home() {
 
       <main className={styles.indexContainer}>
         <img className={styles.bgWave} src="/blue-stripe.svg"></img>
-        <SocialMediaGroup></SocialMediaGroup>
+        <div className={"container " + styles.socialMediaGroupTop}>
+          <SocialMediaGroup></SocialMediaGroup>
+        </div>
 
         <section className={styles.landing}>
           <div className={"container " + styles.landingContainer}>
@@ -135,7 +137,7 @@ export default function Home() {
             </div>
           </div>
           <div className={"container " + styles.hireMeContainer}>
-            <h6>Want to hire me? Send me an email!</h6>
+            <h5>Want to hire me? Send me an email!</h5>
 
             <div className={styles.emailParentButton}>
               <a href="mailto:clapidas@gmail.com">

@@ -10,13 +10,26 @@
   display: flex;
 
   li {
-    padding-left: 10px;
     margin: auto;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      background-color: var(--blue-1);
+    }
   }
 }
 
 .title {
   font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background-color: var(--blue-1);
+  }
 }
 
 .navContainer {
