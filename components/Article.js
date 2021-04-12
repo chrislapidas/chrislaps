@@ -17,10 +17,13 @@ const Article = ({ id, children }) => {
         />
         <link rel="icon" href="./../C.jpg" />
       </Head>
-      <h2>{meta.articles[id].title}</h2>
+      <h1>{meta.articles[id].title}</h1>
       <h4>{date}</h4>
 
-      <Tags tags={meta.articles[id].tags}></Tags>
+      <div className={styles.tags}>
+        <Tags tags={meta.articles[id].tags}></Tags>
+      </div>
+
       <div className={styles.content}>{children}</div>
     </main>
   );

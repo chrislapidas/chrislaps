@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ children }) => {
       ></link>
       <Nav />
       {children}
+      <Footer />
     </div>
   );
 };

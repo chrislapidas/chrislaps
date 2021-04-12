@@ -1,7 +1,12 @@
 .articleContainer {
-  padding-top: var(--nav-height);
+  padding-top: calc(var(--nav-height) + 5%);
+  background-color: var(--blue-1);
 }
 
 .content {
-  padding: 10% 0;
+  padding: 50px 0;
+}
+
+.tags {
+  padding: 20px 0;
 }

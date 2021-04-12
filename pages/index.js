@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
 import styles from "../styles/Index.module.scss";
 import SocialMedia from "../components/SocialMedia";
 import SocialMediaGroup from "../components/SocialMediaGroup";
@@ -47,31 +46,37 @@ export default function Home() {
             </header>
           </div>
           <div className={styles.articleWrapper1}>
-            <a href={meta.articles[0].link}>
+            <a href={meta.articles[meta.articles.length - 1].link}>
               <article className={styles.article}>
-                <h5>{meta.articles[0].title}</h5>
+                <h5>{meta.articles[meta.articles.length - 1].title}</h5>
                 <div className={styles.articleDate}>
-                  {moment(meta.articles[0].date).format("MMMM D, YYYY")}
+                  {moment(meta.articles[meta.articles.length - 1].date).format(
+                    "MMMM D, YYYY"
+                  )}
                 </div>
               </article>
             </a>
           </div>
           <div className={styles.articleWrapper2}>
-            <a href={meta.articles[1].link}>
+            <a href={meta.articles[meta.articles.length - 2].link}>
               <article className={styles.article}>
-                <h5>{meta.articles[1].title}</h5>
+                <h5>{meta.articles[meta.articles.length - 2].title}</h5>
                 <div className={styles.articleDate}>
-                  {moment(meta.articles[1].date).format("MMMM D, YYYY")}
+                  {moment(meta.articles[meta.articles.length - 2].date).format(
+                    "MMMM D, YYYY"
+                  )}
                 </div>
               </article>
             </a>
           </div>
           <div className={styles.articleWrapper3}>
-            <a href={meta.articles[2].link}>
+            <a href={meta.articles[meta.articles.length - 3].link}>
               <article className={styles.article}>
-                <h5>{meta.articles[2].title}</h5>
+                <h5>{meta.articles[meta.articles.length - 3].title}</h5>
                 <div className={styles.articleDate}>
-                  {moment(meta.articles[2].date).format("MMMM D, YYYY")}
+                  {moment(meta.articles[meta.articles.length - 3].date).format(
+                    "MMMM D, YYYY"
+                  )}
                 </div>
               </article>
             </a>
@@ -159,8 +164,6 @@ export default function Home() {
         <div className={"container"}>
           <hr></hr>
         </div>
-
-        <Footer></Footer>
 
         {/* 
         <div className={styles.positionRelativeBottom}>
