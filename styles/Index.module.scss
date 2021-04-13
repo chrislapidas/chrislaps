@@ -1,5 +1,5 @@
 .landing {
-  padding: min(calc(15% - 39px), calc(190px - 39px)) 0 min(15%, 190px) 0;
+  padding: min(calc(15% - 39px), calc(300px - 39px)) 0 min(15%, 300px) 0;
 }
 
 .indexContainer {
@@ -43,6 +43,7 @@
 .aboutMeSection {
   color: white;
   background: var(--blue-4);
+  border-radius: var(--border-radius-lg);
 }
 
 .aboutMeTitle {
@@ -52,7 +53,7 @@
 }
 
 .latestContainer {
-  padding: 0 10% 10% 10%;
+  padding: 0 10% min(10%, 180px) 10%;
   row-gap: 1rem;
   column-gap: 1rem;
   display: flex;
@@ -79,7 +80,7 @@
   box-shadow: var(--blue-3-shadow);
   background: var(--blue-3);
   transition: var(--transition);
-  border-radius: 10%;
+  border-radius: var(--border-radius-sm);
   color: white;
   &:hover {
     background: var(--blue-4);
@@ -117,7 +118,7 @@
 
   //-webkit-box-shadow: var(--blue-3-shadow);
   //box-shadow: var(--blue-3-shadow);
-  border-radius: 20px;
+  border-radius: var(--border-radius-md);
   padding: 5% 0;
   //border: 2px solid var(--blue-4);
 }
@@ -140,7 +141,7 @@
   text-align: left;
   margin: auto 0;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: var(--border-radius-xs);
   font-size: 12px;
   line-height: 20px;
   max-width: 80%;
@@ -158,9 +159,6 @@
 .emailParentButton {
   display: flex;
   margin-left: 10px;
-  //-webkit-box-shadow: var(--simple-shadow);
-  //box-shadow: var(--simple-shadow);
-  border-radius: 14px;
 }
 .emailButton,
 .clipboardButton {
@@ -185,12 +183,12 @@
 }
 
 .emailButton {
-  border-radius: 10px 0 0 10px;
+  border-radius: var(--border-radius-xs) 0 0 var(--border-radius-xs);
   border-right: 2px solid var(--blue-2);
 }
 
 .clipboardButton {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 var(--border-radius-xs) var(--border-radius-xs) 0;
 }
 
 .iconRow {
@@ -226,6 +224,12 @@
 @media (max-width: 1500px) {
   .bgWave {
     transform: scaleY(1.6);
+  }
+}
+
+@media (max-width: 1390px) {
+  .aboutMeSection {
+    border-radius: 0px;
   }
 }
 
