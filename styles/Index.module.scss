@@ -1,9 +1,13 @@
 .landing {
-  padding: min(calc(15% - 39px), calc(300px - 39px)) 0 min(15%, 300px) 0;
+  padding: min(15%, 300px) 0;
 }
 
 .indexContainer {
   padding-top: var(--nav-height);
+}
+
+.subtitle {
+  padding-left: 1px;
 }
 
 .bgWave {
@@ -12,6 +16,11 @@
   top: var(--nav-height);
   z-index: -1;
   //transform: scaleY(1.7);
+}
+
+.landingSocialMedia {
+  margin-top: 4px;
+  margin-left: 2px;
 }
 
 .bgWaveUpsideDown {
@@ -31,7 +40,6 @@
 
 .aboutMeContainer {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   padding: 5% 0 15% 0;
 

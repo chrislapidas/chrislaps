@@ -20,17 +20,20 @@ export default function Home() {
 
       <main className={styles.indexContainer}>
         <img className={styles.bgWave} src="/blue-stripe.svg"></img>
-        <div className={"container " + styles.socialMediaGroupTop}>
-          <SocialMediaGroup></SocialMediaGroup>
-        </div>
+        <div className={"container " + styles.socialMediaGroupTop}></div>
 
         <section className={styles.landing}>
-          <div className={"container " + styles.landingContainer}>
-            <h1>Hi, I'm Chris Lapidas.</h1>
-            <h5>
-              I'm a full stack web developer from Rhode Island working with
-              React, Angular, and Node.
-            </h5>
+          <div className={"container"}>
+            <div className={styles.landingContainer}>
+              <h1>Hi, I'm Chris Lapidas.</h1>
+              <h5 className={styles.subtitle}>
+                I'm a full stack web developer from Rhode Island working with
+                React, Angular, and Node.
+              </h5>
+              <div className={styles.landingSocialMedia}>
+                <SocialMediaGroup></SocialMediaGroup>
+              </div>
+            </div>
           </div>
         </section>
 
