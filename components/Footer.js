@@ -12,7 +12,10 @@ const Footer = () => {
         </div>
 
         <div>
-          <SocialMediaGroup></SocialMediaGroup>
+          <div className={styles.footerSocialMedia}>
+            <SocialMediaGroup></SocialMediaGroup>
+          </div>
+
           <h5>clapidas@gmail.com</h5>
         </div>
       </div>

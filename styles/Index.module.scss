@@ -40,11 +40,11 @@
 
 .aboutMeContainer {
   display: flex;
+  column-gap: 1rem;
   align-items: center;
   padding: 5% 0 15% 0;
 
   div {
-    padding: 0 5%;
   }
 }
 
@@ -55,7 +55,14 @@
 }
 
 .aboutMeTitle {
+  display: flex;
+  justify-content: center;
   text-align: right;
+  flex: 25%;
+  padding: 0 5%;
+
+  h2 {
+  }
 }
 .landingContainer {
 }

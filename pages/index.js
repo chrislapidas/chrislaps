@@ -89,7 +89,10 @@ export default function Home() {
         <section className={"container " + styles.aboutMeSection}>
           <div className={styles.aboutMeContainer}>
             <div className={styles.aboutMeTitle}>
-              <h2>About Me</h2>
+              <h2>
+                About <br />
+                Me
+              </h2>
             </div>
             <div className={styles.aboutMeText}>
               <p>
