@@ -21,6 +21,9 @@
 .landingSocialMedia {
   margin-top: 4px;
   margin-left: 1px;
+  li {
+    padding-right: 8px;
+  }
 }
 
 .bgWaveUpsideDown {
@@ -130,12 +133,11 @@
   flex: 1 1 50%;
   text-align: center;
   background: var(--blue-1);
-
-  //-webkit-box-shadow: var(--blue-3-shadow);
-  //box-shadow: var(--blue-3-shadow);
+  //-webkit-box-shadow: var(--blue-2-shadow);
+  //box-shadow: var(--blue-2-shadow);
   border-radius: var(--border-radius-md);
   padding: 5% 0;
-  //border: 2px solid var(--blue-4);
+  //border: 1px solid var(--blue-4);
 }
 
 .aboutCreated {
@@ -339,6 +341,7 @@
 
   .nextIcon {
     max-width: 96px;
+    max-height: 80px;
     padding: 0 12px;
   }
 
