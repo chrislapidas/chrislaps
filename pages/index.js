@@ -30,9 +30,6 @@ export default function Home() {
                 I'm a full stack web developer from Rhode Island working with
                 React, Angular, and Node.
               </h5>
-              <div className={styles.landingSocialMedia}>
-                <SocialMediaGroup></SocialMediaGroup>
-              </div>
             </div>
           </div>
         </section>
