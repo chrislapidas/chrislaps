@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     <div>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
         rel="stylesheet"
       />
       <Nav />
