@@ -39,15 +39,10 @@
 
 .aboutMeSection {
   color: white;
-  //background: var(--blue-4);
-  background: linear-gradient(
-    0deg,
-    var(--blue-5) 0%,
-    var(--blue-4) 50%,
-    var(--blue-5) 100%
-  );
+  background: var(--blue-4);
+  //background: linear-gradient(0deg,var(--blue-5) 0%,var(--blue-4) 50%,var(--blue-5) 100%);
   border-radius: var(--border-radius-lg);
-  -webkit-box-shadow: var(--blue-3-shadow-hard);
+  -webkit-box-shadow: var(--blue-3-shadow);
   box-shadow: var(--blue-3-shadow);
 }
 
@@ -64,7 +59,7 @@
 .landingContainer {
   //background-color: var(--blue-4);
   background: linear-gradient(180deg, var(--blue-4) 0%, var(--blue-5) 100%);
-  padding: 18% 40px;
+  padding: 15% 40px;
   border-radius: var(--border-radius-lg);
   color: white;
   -webkit-box-shadow: var(--blue-3-shadow-hard);
