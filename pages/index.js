@@ -3,8 +3,6 @@ import styles from "../styles/Index.module.scss";
 import SocialMedia from "../components/SocialMedia";
 import SocialMediaGroup from "../components/SocialMediaGroup";
 import moment from "moment";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.min.css";
 const meta = require("./../articles.json");
 
 export default function Home() {
@@ -27,11 +25,16 @@ export default function Home() {
         <section className={styles.landing}>
           <div className={"container"}>
             <div className={styles.landingContainer}>
-              <ScrollAnimation animateIn="bounceInRight">
-                <h1> Hi, I'm Chris Lapidas.</h1>
-              </ScrollAnimation>
-
-              <h5 className={styles.subtitle}>
+              <h1 data-aos="fade-left" data-aos-duration="1000">
+                {" "}
+                Hi, I'm Chris Lapidas.
+              </h1>
+              <h5
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                className={styles.subtitle}
+              >
                 I'm a full stack web developer from Rhode Island working with
                 React, Angular, and Node.
               </h5>
@@ -43,14 +46,20 @@ export default function Home() {
           <div className={styles.articleWrapper4}>
             <header className={styles.latestHeader}>
               <a href="/articles">
-                <h2>
+                <h2 className={styles.latestTitle}>
                   Latest <br />
                   Articles
                 </h2>
               </a>
             </header>
           </div>
-          <div className={styles.articleWrapper1}>
+          <div
+            className={styles.articleWrapper1}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-delay="500"
+          >
             <a href={meta.articles[meta.articles.length - 1].link}>
               <article className={styles.article}>
                 <h5>{meta.articles[meta.articles.length - 1].title}</h5>
@@ -62,7 +71,13 @@ export default function Home() {
               </article>
             </a>
           </div>
-          <div className={styles.articleWrapper2}>
+          <div
+            className={styles.articleWrapper2}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-delay="700"
+          >
             <a href={meta.articles[meta.articles.length - 2].link}>
               <article className={styles.article}>
                 <h5>{meta.articles[meta.articles.length - 2].title}</h5>
@@ -74,7 +89,13 @@ export default function Home() {
               </article>
             </a>
           </div>
-          <div className={styles.articleWrapper3}>
+          <div
+            className={styles.articleWrapper3}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-delay="900"
+          >
             <a href={meta.articles[meta.articles.length - 3].link}>
               <article className={styles.article}>
                 <h5>{meta.articles[meta.articles.length - 3].title}</h5>
@@ -98,10 +119,8 @@ export default function Home() {
             </div>
             <div className={styles.aboutMeText}>
               <p>
-                <ScrollAnimation animateIn="fadeIn">
-                  I'm a web developer, designer, and admirer. My work always
-                  focuses on usability and simplicity.
-                </ScrollAnimation>
+                I'm a web developer, designer, and admirer. My work always
+                focuses on usability and simplicity.
               </p>
               <hr></hr>
               <p>

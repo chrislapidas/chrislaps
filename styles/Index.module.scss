@@ -15,7 +15,7 @@
   width: 100%;
   top: var(--nav-height);
   z-index: -1;
-  //transform: scaleY(1.7);
+  //transform: scaleY(2);
 }
 
 .landingSocialMedia {
@@ -241,7 +241,7 @@
 
 @media (max-width: 1500px) {
   .bgWave {
-    transform: scaleY(1.6);
+    transform: scaleY(1.2);
   }
 }
 
