@@ -31,7 +31,7 @@ export default function Home() {
               </h1>
               <h5
                 data-aos="fade-left"
-                data-aos-delay="300"
+                data-aos-delay="150"
                 data-aos-duration="1000"
                 className={styles.subtitle}
               >
@@ -43,7 +43,12 @@ export default function Home() {
         </section>
 
         <section className={"container " + styles.latestContainer}>
-          <div className={styles.articleWrapper4}>
+          <div
+            className={styles.articleWrapper4}
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
             <header className={styles.latestHeader}>
               <a href="/articles">
                 <h2 className={styles.latestTitle}>
@@ -57,8 +62,7 @@ export default function Home() {
             className={styles.articleWrapper1}
             data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-offset="200"
-            data-aos-delay="500"
+            data-aos-delay="300"
           >
             <a href={meta.articles[meta.articles.length - 1].link}>
               <article className={styles.article}>
@@ -75,8 +79,7 @@ export default function Home() {
             className={styles.articleWrapper2}
             data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-offset="200"
-            data-aos-delay="700"
+            data-aos-delay="400"
           >
             <a href={meta.articles[meta.articles.length - 2].link}>
               <article className={styles.article}>
@@ -93,8 +96,7 @@ export default function Home() {
             className={styles.articleWrapper3}
             data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-offset="200"
-            data-aos-delay="900"
+            data-aos-delay="500"
           >
             <a href={meta.articles[meta.articles.length - 3].link}>
               <article className={styles.article}>
@@ -109,8 +111,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={"container " + styles.aboutMeSection}>
-          <div className={styles.aboutMeContainer}>
+        <section className={styles.aboutMeSection}>
+          <div className={"container " + styles.aboutMeContainer}>
             <div className={styles.aboutMeTitle}>
               <h2>
                 About <br />
