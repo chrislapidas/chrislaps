@@ -3,6 +3,8 @@ import styles from "../styles/Index.module.scss";
 import SocialMedia from "../components/SocialMedia";
 import SocialMediaGroup from "../components/SocialMediaGroup";
 import moment from "moment";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
 const meta = require("./../articles.json");
 
 export default function Home() {
@@ -25,7 +27,10 @@ export default function Home() {
         <section className={styles.landing}>
           <div className={"container"}>
             <div className={styles.landingContainer}>
-              <h1>Hi, I'm Chris Lapidas.</h1>
+              <ScrollAnimation animateIn="bounceInRight">
+                <h1> Hi, I'm Chris Lapidas.</h1>
+              </ScrollAnimation>
+
               <h5 className={styles.subtitle}>
                 I'm a full stack web developer from Rhode Island working with
                 React, Angular, and Node.
@@ -93,8 +98,10 @@ export default function Home() {
             </div>
             <div className={styles.aboutMeText}>
               <p>
-                I'm a web developer, designer, and admirer. My work always
-                focuses on usability and simplicity.
+                <ScrollAnimation animateIn="fadeIn">
+                  I'm a web developer, designer, and admirer. My work always
+                  focuses on usability and simplicity.
+                </ScrollAnimation>
               </p>
               <hr></hr>
               <p>
