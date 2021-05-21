@@ -30,7 +30,7 @@ export default function Home() {
               <h5
                 data-aos="fade-left"
                 data-aos-delay="150"
-                data-aos-duration="1000"
+                data-aos-duration="1100"
                 className={styles.subtitle}
               >
                 I'm a full stack web developer from Rhode Island working with
@@ -45,7 +45,7 @@ export default function Home() {
             className={styles.articleWrapper4}
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-delay="700"
+            data-aos-delay="300"
           >
             <header className={styles.latestHeader}>
               <a href="/articles">
@@ -60,7 +60,6 @@ export default function Home() {
             className={styles.articleWrapper1}
             data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-delay="300"
           >
             <a href={meta.articles[meta.articles.length - 1].link}>
               <article className={styles.article}>
@@ -77,7 +76,7 @@ export default function Home() {
             className={styles.articleWrapper2}
             data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-delay="400"
+            data-aos-delay="100"
           >
             <a href={meta.articles[meta.articles.length - 2].link}>
               <article className={styles.article}>
@@ -94,7 +93,7 @@ export default function Home() {
             className={styles.articleWrapper3}
             data-aos="fade-left"
             data-aos-duration="1000"
-            data-aos-delay="500"
+            data-aos-delay="200"
           >
             <a href={meta.articles[meta.articles.length - 3].link}>
               <article className={styles.article}>
@@ -111,7 +110,11 @@ export default function Home() {
 
         <section className={styles.aboutMeSection}>
           <div className={"container " + styles.aboutMeContainer}>
-            <div className={styles.aboutMeTitle}>
+            <div
+              className={styles.aboutMeTitle}
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <h2>
                 About <br />
                 Me
@@ -119,20 +122,27 @@ export default function Home() {
             </div>
             <div className={styles.aboutMeText}>
               <p>
-                I'm a web developer, designer, and admirer. My work always
-                focuses on usability and simplicity.
+                <div data-aos="fade-left" data-aos-duration="750">
+                  I'm a web developer, designer, and admirer. My work always
+                  focuses on usability and simplicity.
+                </div>
               </p>
               <hr></hr>
               <p>
-                I've spent the past 6 years creating and learning everything I
-                can about web tech and trends. Anything that can make my work
-                better and my life easier is always at the top of my to-do list.
+                <div data-aos="fade-left" data-aos-duration="750">
+                  I've spent the past 6 years creating and learning everything I
+                  can about web tech and trends. Anything that can make my work
+                  better and my life easier is always at the top of my to-do
+                  list.
+                </div>
               </p>
               <hr></hr>
               <p>
-                Previously I spent 5 years serving active duty US Navy while
-                touring the country as a guitarist. My hobbies include hiking,
-                cooking, and spending lots of time with friends and family.
+                <div data-aos="fade-left" data-aos-duration="750">
+                  Previously I spent 5 years serving active duty US Navy while
+                  touring the country as a guitarist. My hobbies include hiking,
+                  cooking, and spending lots of time with friends and family.
+                </div>
               </p>
             </div>
           </div>
@@ -140,7 +150,11 @@ export default function Home() {
 
         <section className={styles.aboutSection}>
           <div className={"container " + styles.aboutContainer}>
-            <div className={styles.aboutCreated}>
+            <div
+              className={styles.aboutCreated}
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
               <div>
                 I created this site using
                 <br /> <b>Next.js</b> and <b>React</b>
@@ -150,7 +164,12 @@ export default function Home() {
                 <img className={styles.reactIcon} src="/react.svg"></img>
               </div>
             </div>
-            <div className={styles.aboutAws}>
+            <div
+              className={styles.aboutAws}
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-duration="850"
+            >
               <div>
                 I build, deploy, and run this site using <br />{" "}
                 <a href="https://aws.amazon.com/elasticbeanstalk/">

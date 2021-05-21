@@ -27,9 +27,9 @@
 
 .aboutMeSection {
   color: white;
-  background: var(--blue-4);
+  //background: var(--blue-4);
   //background: linear-gradient(0deg,var(--blue-5) 0%,var(--blue-4) 50%,var(--blue-5) 100%);
-
+  background: var(--blue-5);
   -webkit-box-shadow: var(--blue-3-shadow);
   box-shadow: var(--blue-3-shadow);
 }
@@ -86,7 +86,7 @@
   -webkit-box-shadow: var(--blue-3-shadow);
   box-shadow: var(--blue-3-shadow);
   //background: var(--blue-3);
-  background: linear-gradient(130deg, var(--blue-3) 0%, var(--blue-4) 100%);
+  background: linear-gradient(130deg, var(--dark-1) 0%, var(--blue-5) 100%);
   transition: var(--transition);
   border-radius: var(--border-radius-md);
   color: white;
@@ -124,9 +124,9 @@
 .aboutAws {
   flex: 1 1 50%;
   text-align: center;
-  background: linear-gradient(180deg, var(--blue-1) 0%, var(--blue-2) 100%);
-  -webkit-box-shadow: var(--blue-2-shadow);
-  box-shadow: var(--blue-2-shadow);
+  background: linear-gradient(200deg, var(--blue-2) 0%, var(--blue-3) 100%);
+  -webkit-box-shadow: var(--blue-3-shadow);
+  box-shadow: var(--blue-3-shadow);
   border-radius: var(--border-radius-md);
   padding: 5% 0;
   //border: 1px solid var(--blue-4);
