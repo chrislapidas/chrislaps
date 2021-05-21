@@ -3,6 +3,7 @@ import styles from "../styles/Index.module.scss";
 import SocialMedia from "../components/SocialMedia";
 import SocialMediaGroup from "../components/SocialMediaGroup";
 import moment from "moment";
+import { useRef } from "react";
 const meta = require("./../articles.json");
 
 export default function Home() {
@@ -19,9 +20,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.indexContainer}>
-        <img className={styles.bgWave} src="/blue-stripe.svg"></img>
-        <div className={"container " + styles.socialMediaGroupTop}></div>
-
         <section className={styles.landing}>
           <div className={"container"}>
             <div className={styles.landingContainer}>
