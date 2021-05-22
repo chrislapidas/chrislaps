@@ -124,10 +124,10 @@
 .aboutAws {
   flex: 1 1 50%;
   text-align: center;
-  //background: linear-gradient(200deg, var(--blue-2) 0%, var(--blue-3) 100%);
-  background: linear-gradient(190deg, var(--yellow-1) 0%, var(--yellow-2) 100%);
-  //-webkit-box-shadow: var(--blue-3-shadow);
-  //box-shadow: var(--blue-3-shadow);
+  background: linear-gradient(200deg, var(--blue-1) 0%, var(--blue-2) 100%);
+  //background: linear-gradient(190deg, var(--yellow-1) 0%, var(--yellow-2) 100%);
+  -webkit-box-shadow: var(--blue-3-shadow);
+  box-shadow: var(--blue-3-shadow);
   border-radius: var(--border-radius-md);
   padding: 5% 0;
   //border: 1px solid var(--blue-4);
