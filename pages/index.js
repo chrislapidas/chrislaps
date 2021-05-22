@@ -61,16 +61,19 @@ export default function Home() {
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <a href={meta.articles[meta.articles.length - 1].link}>
-              <article className={styles.article}>
+            <article className={styles.articleParent}>
+              <a
+                className={styles.article}
+                href={meta.articles[meta.articles.length - 1].link}
+              >
                 <h5>{meta.articles[meta.articles.length - 1].title}</h5>
                 <div className={styles.articleDate}>
                   {moment(meta.articles[meta.articles.length - 1].date).format(
                     "MMMM D, YYYY"
                   )}
                 </div>
-              </article>
-            </a>
+              </a>
+            </article>
           </div>
           <div
             className={styles.articleWrapper2}
@@ -78,16 +81,19 @@ export default function Home() {
             data-aos-duration="1000"
             data-aos-delay="100"
           >
-            <a href={meta.articles[meta.articles.length - 2].link}>
-              <article className={styles.article}>
+            <article className={styles.articleParent}>
+              <a
+                href={meta.articles[meta.articles.length - 2].link}
+                className={styles.article}
+              >
                 <h5>{meta.articles[meta.articles.length - 2].title}</h5>
                 <div className={styles.articleDate}>
                   {moment(meta.articles[meta.articles.length - 2].date).format(
                     "MMMM D, YYYY"
                   )}
-                </div>
-              </article>
-            </a>
+                </div>{" "}
+              </a>
+            </article>
           </div>
           <div
             className={styles.articleWrapper3}
@@ -95,16 +101,19 @@ export default function Home() {
             data-aos-duration="1000"
             data-aos-delay="200"
           >
-            <a href={meta.articles[meta.articles.length - 3].link}>
-              <article className={styles.article}>
+            <article className={styles.articleParent}>
+              <a
+                className={styles.article}
+                href={meta.articles[meta.articles.length - 3].link}
+              >
                 <h5>{meta.articles[meta.articles.length - 3].title}</h5>
                 <div className={styles.articleDate}>
                   {moment(meta.articles[meta.articles.length - 3].date).format(
                     "MMMM D, YYYY"
                   )}
                 </div>
-              </article>
-            </a>
+              </a>
+            </article>
           </div>
         </section>
 
