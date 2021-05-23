@@ -9,10 +9,10 @@
     },
     {
       "id": 1,
-      "title": "Anonymous Functions in Javascript",
+      "title": "Embed Codepen in React JSX",
       "date": "2021-03-22",
-      "tags": ["Javascript"],
-      "link": "/articles/javascript-anonymous-functions"
+      "tags": ["HTML", "CSS", "Javascript", "React"],
+      "link": "/articles/embed-codepen-in-react-jsx"
     },
     {
       "id": 2,
