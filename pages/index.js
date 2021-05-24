@@ -118,41 +118,44 @@ export default function Home() {
         </section>
 
         <section className={styles.aboutMeSection}>
-          <div className={"container " + styles.aboutMeContainer}>
-            <div
-              className={styles.aboutMeTitle}
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <h2>
-                About <br />
-                Me
-              </h2>
-            </div>
-            <div className={styles.aboutMeText}>
-              <p>
-                <div data-aos="fade-left" data-aos-duration="750">
-                  I'm a web developer, designer, and admirer. My work always
-                  focuses on usability and simplicity.
-                </div>
-              </p>
-              <hr></hr>
-              <p>
-                <div data-aos="fade-left" data-aos-duration="750">
-                  I've spent the past 6 years creating and learning everything I
-                  can about web tech and trends. Anything that can make my work
-                  better and my life easier is always at the top of my to-do
-                  list.
-                </div>
-              </p>
-              <hr></hr>
-              <p>
-                <div data-aos="fade-left" data-aos-duration="750">
-                  Previously I spent 5 years serving active duty US Navy while
-                  touring the country as a guitarist. My hobbies include hiking,
-                  cooking, and spending lots of time with friends and family.
-                </div>
-              </p>
+          <div className={"container"}>
+            <div className={"container " + styles.aboutMeContainer}>
+              <div
+                className={styles.aboutMeTitle}
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <h2>
+                  About <br />
+                  Me
+                </h2>
+              </div>
+              <div className={styles.aboutMeText}>
+                <p>
+                  <div data-aos="fade-left" data-aos-duration="750">
+                    I'm a web developer, designer, and admirer. My work always
+                    focuses on usability and simplicity.
+                  </div>
+                </p>
+                <hr></hr>
+                <p>
+                  <div data-aos="fade-left" data-aos-duration="750">
+                    I've spent the past 6 years creating and learning everything
+                    I can about web tech and trends. Anything that can make my
+                    work better and my life easier is always at the top of my
+                    to-do list.
+                  </div>
+                </p>
+                <hr></hr>
+                <p>
+                  <div data-aos="fade-left" data-aos-duration="750">
+                    Previously I spent 5 years serving active duty US Navy while
+                    touring the country as a guitarist. My hobbies include
+                    hiking, cooking, and spending lots of time with friends and
+                    family.
+                  </div>
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -217,19 +220,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <div className={"container"}>
-          <hr></hr>
-        </div>
-
-        {/* 
-        <div className={styles.positionRelativeBottom}>
-          <img
-            className={styles.bgWaveUpsideDown}
-            src="/bg-wave-upside-down.svg"
-          ></img>
-        </div>
-        */}
       </main>
     </div>
   );

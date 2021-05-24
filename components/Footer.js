@@ -4,6 +4,9 @@ import SocialMediaGroup from "./SocialMediaGroup";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <div className={"container"}>
+        <hr></hr>
+      </div>
       <div className={"container " + styles.footerInner}>
         <div>
           <h3>Chris Lapidas</h3>
@@ -13,7 +16,7 @@ const Footer = () => {
 
         <div>
           <div className={styles.footerSocialMedia}>
-            <SocialMediaGroup></SocialMediaGroup>
+            <SocialMediaGroup article="true"></SocialMediaGroup>
           </div>
 
           <h5>clapidas@gmail.com</h5>

@@ -1,24 +1,33 @@
 import styles from "../styles/SocialMediaGroup.module.scss";
 import SocialMedia from "./SocialMedia";
 
-const SocialMediaGroup = () => {
+const SocialMediaGroup = (props) => {
+  let githubSrc = "github.svg";
+  let instaSrc = "instagram.svg";
+  let fbSrc = "facebook.svg";
+
+  if (props.article) {
+    githubSrc = "../github.svg";
+    instaSrc = "../instagram.svg";
+    fbSrc = "../facebook.svg";
+  }
   return (
     <ul className={styles.socialMediaList}>
       <li>
         <SocialMedia
-          src="github.svg"
+          src={githubSrc}
           href="https://github.com/chrislapidas"
         ></SocialMedia>
       </li>
       <li>
         <SocialMedia
-          src="instagram.svg"
+          src={instaSrc}
           href="https://www.instagram.com/chrislapidas/"
         ></SocialMedia>
       </li>
       <li>
         <SocialMedia
-          src="facebook.svg"
+          src={fbSrc}
           href="https://www.facebook.com/chris.lapidas"
         ></SocialMedia>
       </li>
