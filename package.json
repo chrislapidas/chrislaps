@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "tags": "node tags.js",
     "build": "next build && next export",
     "start": "next dev",
     "prod": "next start"
