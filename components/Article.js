@@ -3,6 +3,7 @@ import * as moment from "moment";
 import styles from "../styles/Article.module.scss";
 import Head from "next/head";
 import Tags from "./Tags";
+import classnames from "classnames";
 
 const Article = ({ id, children }) => {
   const date = moment(meta.articles[id].date).format("MMMM D, YYYY");

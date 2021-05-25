@@ -4,16 +4,19 @@ import Head from "next/head";
 import * as moment from "moment";
 
 const articles = () => {
-  const articleListItems = meta.articles.map((article) => (
-    <li key={article.id}>
-      <a href={article.link}>
-        {article.title} -{" "}
-        <span className={styles.date}>
-          {moment(article.date).format("MMMM D, YYYY")}
-        </span>
-      </a>
-    </li>
-  ));
+  const articleListItems = meta.articles
+    .slice(0)
+    .reverse()
+    .map((article) => (
+      <li key={article.id}>
+        <a href={article.link}>
+          {article.title} -{" "}
+          <span className={styles.date}>
+            {moment(article.date).format("MMMM D, YYYY")}
+          </span>
+        </a>
+      </li>
+    ));
 
   return (
     <div className={"container " + styles.articlesContainer}>

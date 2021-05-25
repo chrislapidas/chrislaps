@@ -33,11 +33,19 @@ export default function CodepenReact() {
         </div>
 
         <div className={styles.contentDiv}>
+          <h2>Install Dependencies</h2>
+        </div>
+
+        <div className={styles.contentDiv}>
           First we need to install the react-codepen-embed dependency:
         </div>
 
         <div className={styles.contentDiv}>
           <Code>npm install --save react-codepen-embed</Code>
+        </div>
+
+        <div className={styles.contentDiv}>
+          <h2>Get Username and Hash</h2>
         </div>
 
         <div className={styles.contentDiv}>
@@ -55,6 +63,10 @@ export default function CodepenReact() {
           The "username" is simply your username which can be seen right after
           the "codepen.io/" in the url, and the hash is the last part after the
           last slash (in this case "Poppv0x").
+        </div>
+
+        <div className={styles.contentDiv}>
+          <h2>Add Codepen Component to JSX</h2>
         </div>
 
         <div className={styles.contentDiv}>

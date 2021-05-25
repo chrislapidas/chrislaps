@@ -2,22 +2,22 @@
   "articles": [
     {
       "id": 0,
-      "title": "Beginner's Guide to CSS Flex",
-      "date": "2021-03-15",
-      "tags": ["CSS", "Javascript"],
-      "link": "/articles/css-flex"
+      "title": "Setting Up A New React Project",
+      "date": "2021-04-15",
+      "tags": ["React", "Javascript"],
+      "link": "/articles/setting-up-new-react-project"
     },
     {
       "id": 1,
       "title": "Embed Codepen in React JSX",
-      "date": "2021-03-22",
+      "date": "2021-04-22",
       "tags": ["HTML", "CSS", "Javascript", "React"],
       "link": "/articles/embed-codepen-in-react-jsx"
     },
     {
       "id": 2,
       "title": "Running a Node Application on AWS Elastic Beanstalk",
-      "date": "2021-04-02",
+      "date": "2021-05-02",
       "tags": ["Node", "Javascript", "AWS"],
       "link": "/articles/node-application-aws-elastic-beanstalk"
     }
