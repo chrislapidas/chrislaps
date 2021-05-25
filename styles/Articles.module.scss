@@ -1,9 +1,16 @@
 .articleList {
+  font-size: 1.3rem;
   list-style: none;
-  li: {
+  li {
+    padding-bottom: 2%;
   }
 }
 
 .articlesContainer {
-  padding-top: var(--nav-height);
+  padding-top: calc(var(--nav-height) + 3%);
+}
+
+.date {
+  font-size: 1rem;
+  color: var(--gray-2);
 }

@@ -7,7 +7,10 @@ const articles = () => {
   const articleListItems = meta.articles.map((article) => (
     <li key={article.id}>
       <a href={article.link}>
-        {article.title} - {moment(article.date).format("MMMM D, YYYY")}
+        {article.title} -{" "}
+        <span className={styles.date}>
+          {moment(article.date).format("MMMM D, YYYY")}
+        </span>
       </a>
     </li>
   ));
