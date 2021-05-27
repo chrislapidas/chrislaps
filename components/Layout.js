@@ -16,7 +16,6 @@ const Layout = ({ children }) => {
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
         rel="stylesheet"
       />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js" />
       <Nav />
       {children}
       <Footer />
