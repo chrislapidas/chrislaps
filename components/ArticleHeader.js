@@ -1,7 +1,7 @@
 import styles from "../styles/ArticleHeader.module.scss";
 
 const ArticleHeader = (props) => {
-  return <div></div>;
+  return <h2></h2>;
 };
 
 export default ArticleHeader;

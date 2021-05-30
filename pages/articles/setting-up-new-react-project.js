@@ -1,5 +1,6 @@
 import Article from "../../components/Article";
 import ArticleImg from "../../components/ArticleImg";
+import ArticleDiv from "../../components/ArticleDiv";
 import styles from "../../styles/Article.module.scss";
 import Code from "../../components/Code";
 
@@ -7,19 +8,19 @@ export default function SettingUpNewReackProject() {
   return (
     <Article id="0">
       <article>
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           In this article, we will create a basic React application and install
           some useful tools that most people would want in their project
           including routing, Sass, and Typescript.
-        </div>
-        <div className={styles.contentDiv}>
+        </ArticleDiv>
+        <ArticleDiv>
           <h2>Create React App</h2>
-        </div>
-        <div className={styles.contentDiv}>
+        </ArticleDiv>
+        <ArticleDiv>
           First let's start by running the create react app command in the
           terminal, moving into the project, and running it:
-        </div>
-        <div className={styles.contentDiv}>
+        </ArticleDiv>
+        <ArticleDiv>
           <Code>
             npx create-react-app my-app
             <br />
@@ -27,41 +28,39 @@ export default function SettingUpNewReackProject() {
             <br />
             npm start
           </Code>
-        </div>
-        <div className={styles.contentDiv}>
+        </ArticleDiv>
+        <ArticleDiv>
           Now let's open up our browser and open <b>http://localhost:3000/</b>.
           We should see a screen that looks like this:
-        </div>
-        <div className={styles.contentDiv}>
+        </ArticleDiv>
+        <ArticleDiv>
           <ArticleImg src="../react-1.png" width="50%"></ArticleImg>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           Now that we've got our basic React app up and running, lets add some
           basic dependencies that most projects will be able to utilize. Let's
           start with Typescript:
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <Code>
             npm install --save typescript @types/node @types/react
             @types/react-dom
           </Code>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>And now let's add Sass:</div>
+        <ArticleDiv>And now let's add Sass:</ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <Code>npm install node-sass --save</Code>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
-          And for one last installation, routing:
-        </div>
+        <ArticleDiv> And for one last installation, routing:</ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <Code>npm install react-router-dom</Code>
-        </div>
+        </ArticleDiv>
       </article>
     </Article>
   );

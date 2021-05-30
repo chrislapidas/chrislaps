@@ -1,4 +1,5 @@
 import Article from "../../components/Article";
+import ArticleDiv from "../../components/ArticleDiv";
 import Code from "../../components/Code";
 import Codepen from "react-codepen-embed";
 import styles from "../../styles/Article.module.scss";
@@ -7,7 +8,7 @@ export default function CodepenReact() {
   return (
     <Article id="1">
       <article>
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <a href="https://codepen.io/"> Codepen</a> is a really handy tool for
           quickly testing out HTML, CSS, and JS concepts while being able to
           share them with others easily. They provide easy ways to embed a small
@@ -19,71 +20,69 @@ export default function CodepenReact() {
             react-codepen-embed
           </a>{" "}
           library to quickly and easily embed our codepen in JSX.
-        </div>
-        <div className={styles.contentDiv}>
-          Here's an example of the embedded codepen box:
-        </div>
+        </ArticleDiv>
+        <ArticleDiv>Here's an example of the embedded codepen box:</ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <Codepen
             hash="PoppvOx"
             user="clapidas"
             loader={() => <div>Loading...</div>}
           />
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <h2>Install Dependencies</h2>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           First we need to install the react-codepen-embed dependency:
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <Code>npm install --save react-codepen-embed</Code>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <h2>Get Username and Hash</h2>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           Next let's hop over to Codepen and grab the username and hash
           associated with our pen. The easiest way to do this is to open your
           pen in the browser and check out the url, it should look something
           like this:
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <b>https://codepen.io/clapidas/pen/PoppvOx</b>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           The "username" is simply your username which can be seen right after
           the "codepen.io/" in the url, and the hash is the last part after the
           last slash (in this case "Poppv0x").
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <h2>Add Codepen Component to JSX</h2>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           Now we can head back over to our React project and create the embedded
           Codepen. Import the following into your react component file:
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <Code>import Codepen from "react-codepen-embed";</Code>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           Then go ahead and create the following wherever you want to create
           your embedded Codepen:
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           <Code>
             &lt;Codepen <br />
             &nbsp; &nbsp; hash=&quot;PoppvOx&quot; <br />
@@ -92,11 +91,11 @@ export default function CodepenReact() {
             &lt;div&gt;Loading...&lt;/div&gt;&#125; <br />
             /&gt;
           </Code>
-        </div>
+        </ArticleDiv>
 
-        <div className={styles.contentDiv}>
+        <ArticleDiv>
           And that's it! A simple, easy way to embed your Codepen in React JSX.
-        </div>
+        </ArticleDiv>
       </article>
     </Article>
   );
