@@ -6,7 +6,7 @@ import styles from "../../styles/Article.module.scss";
 
 export default function CodepenReact() {
   return (
-    <Article id="1">
+    <Article id="2">
       <article>
         <ArticleDiv>
           <a href="https://codepen.io/"> Codepen</a> is a really handy tool for

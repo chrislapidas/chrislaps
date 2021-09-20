@@ -6,7 +6,7 @@ import Code from "../../components/Code";
 
 export default function SettingUpNewReackProject() {
   return (
-    <Article id="0">
+    <Article id="1">
       <article>
         <ArticleDiv>
           In this article, we will create a basic React application and install
@@ -60,6 +60,12 @@ export default function SettingUpNewReackProject() {
 
         <ArticleDiv>
           <Code>npm install react-router-dom</Code>
+        </ArticleDiv>
+
+        <ArticleDiv>
+          You're now ready to write your first React application! There are a
+          nearly endless amount of ideas you can implement in React, so be
+          creative and have fun!
         </ArticleDiv>
       </article>
     </Article>
